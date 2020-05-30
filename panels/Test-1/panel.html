@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <title>8 INPUTS - 8 OUTPUTS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="media/favicon.ico" type="image/ico"/>
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon"/>
+
+    <!-- Hojas de estilo de los diferentes componentes -->
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/led.css">
+    <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/pushbutton.css">
+    <link rel="stylesheet" href="css/label-on-off.css">
+
+    <!-- Código de los componentes -->
+    <script src="js/SerialPanel.js"></script>
+    <script src="js/led.js"></script>
+    <script src="js/switch.js"></script>
+    <script src="js/pushbutton.js"></script>
+    <script src="panel.js" defer> </script>
+  </head>
+
+  <body>
+
+    <!--  RECURSO: Audio del click del switch -->
+    <audio id="click" src="media/click.mp3">
+    </audio>
+
+    <!-- Mensaje de error que se muestra si el navegador
+         no tiene web-serial
+     -->
+    <div class="w3-panel w3-red w3-round-xlarge w3-border w3-margin-left w3-margin-right" id="msg_serial">
+      <h3>Warning!</h3>
+      <p>Este navegador NO soporta <b>Web Serial</b></p>
+      <p>Asegúrate que estás usando
+      Chrome/Chromium 78 o superior
+        y que está habilitado el flag
+      <code>#enable-experimental-web-platform-features</code> en
+      <code>chrome://flags</code></p>
+      <p>Para habilitarlo en Chrome/Chromium copia esta URL en una nueva pestaña:
+      <a href="chrome://flags/#enable-experimental-web-platform-features">chrome://flags/#enable-experimental-web-platform-features</a>
+      y pincha en ENABLE</p>
+    </div>
+
+    <!-- Panel de control LOVE -->
+    <div class="w3-card-4 w3-margin w3-round-large">
+
+      <header class="w3-container w3-grey w3-text-white">
+        <h5>LOVE Controls</h5>
+      </header>
+
+      <!-- Botones de gestion del panel -->
+      <div class="w3-container">
+          <p>
+          <button class="w3-button w3-pale-green w3-round-large" type="button" id="butSerial" disabled>🔌Connect</button>
+          <button class="w3-button w3-yellow w3-round-large " id="butReset" disabled>↪ Reset</button>
+          <button class="w3-bar-item w3-button w3-yellow w3-round-large " id="butSync" disabled>⤵ Sync</button>
+          </p>
+      </div>
+    </div>
+
+   <!-- ENTRADAS del circuito -->
+   <div class="w3-card-4 w3-margin w3-round-large">
+     <header class="w3-container w3-blue w3-text-white">
+       <h5><b>INPUTS</b></h5>
+     </header>
+
+     <!-- Switches -->
+     <div class="w3-container">
+       <div class="w3-row">
+
+         <!-- Grupo: Datos -->
+         <div class="w3-col w3-center" style="width:1000px">
+           <p class="w3-margin-top w3-text-blue" style="margin:0px">Switches</p>
+           <div class="w3-container">
+             <div class="w3-row">
+
+               <!-- Label on/off -->
+               <div class="w3-col w3-center" style="width:30px">
+                 <p class="w3-margin-top" style="margin:0px">&nbsp</p>
+                 <div class="Label-on-off"></div>
+               </div>
+
+               <!-- Switch 15 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swa"></div>
+               </div>
+
+               <!-- Switch 14 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swb"></div>
+               </div>
+
+               <!-- Switch 13 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swc"></div>
+               </div>
+
+               <!-- Switch 12 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swd"></div>
+               </div>
+
+               <!-- Switch 11 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swe"></div>
+               </div>
+
+               <!-- Switch 10 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swf"></div>
+               </div>
+
+               <!-- Switch 9 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swg"></div>
+               </div>
+
+               <!-- Switch 8 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swh"></div>
+               </div>
+
+               <!-- Switch 7 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swi"></div>
+               </div>
+
+               <!-- Switch 6 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swj"></div>
+               </div>
+
+               <!-- Switch 5 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swk"></div>
+               </div>
+
+               <!-- Switch 4 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swl"></div>
+               </div>
+
+               <!-- Switch 3 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swm"></div>
+               </div>
+
+               <!-- Switch 2 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swn"></div>
+               </div>
+
+               <!-- Switch 1 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swo"></div>
+               </div>
+
+               <!-- Switch 0 -->
+               <div class="w3-col w3-center" style="width:54px">
+                 <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                 <div class="Switch switch_disabled" id="swp"></div>
+               </div>
+
+             </div>
+           </div>
+         </div>
+
+         <!-- Grupo: Pulsadores -->
+         <!-- Vacio: para meter otro -->
+
+         <div class="w3-rest"></div>
+       </div>
+      </div>
+
+      <!-- Switches -->
+      <div class="w3-container">
+        <div class="w3-row">
+
+          <!-- Grupo: Datos -->
+          <div class="w3-col w3-center" style="width:280px">
+            <p class="w3-margin-top w3-text-blue" style="margin:0px">Switches</p>
+            <div class="w3-container">
+              <div class="w3-row">
+
+                <!-- Label on/off -->
+                <div class="w3-col w3-center" style="width:30px">
+                  <p class="w3-margin-top" style="margin:0px">&nbsp</p>
+                  <div class="Label-on-off"></div>
+                </div>
+
+                <!-- First switch -->
+                <div class="w3-col w3-center" style="width:54px">
+                  <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                  <div class="Switch switch_disabled" id="swq"></div>
+                </div>
+
+                <!-- Second switch -->
+                <div class="w3-col w3-center" style="width:54px">
+                  <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                  <div class="Switch switch_disabled" id="swr"></div>
+                </div>
+
+                <!-- Third switch -->
+                <div class="w3-col w3-center" style="width:54px">
+                  <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                  <div class="Switch switch_disabled" id="sws"></div>
+                </div>
+
+                <!-- Fourth switch -->
+                <div class="w3-col w3-center" style="width:54px">
+                  <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                  <div class="Switch switch_disabled" id="swt"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Grupo: Pulsadores -->
+          <div class="w3-col w3-center" style="width:220px">
+            <p class="w3-margin-top w3-text-blue" style="margin:0px">Pushbuttons</p>
+
+            <!-- First pushbuton -->
+            <div class="w3-col w3-center" style="width:54px">
+              <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+              <div class="Pushbutton pushbutton_disabled" id="pbu"></div>
+            </div>
+
+            <!-- Second pushbuton -->
+            <div class="w3-col w3-center" style="width:54px">
+              <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+              <div class="Pushbutton pushbutton_disabled" id="pbv"></div>
+            </div>
+
+            <!-- Third pushbuton -->
+            <div class="w3-col w3-center" style="width:54px">
+              <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+              <div class="Pushbutton pushbutton_disabled" id="pbw"></div>
+            </div>
+
+            <!-- Forth pushbuton -->
+            <div class="w3-col w3-center" style="width:54px">
+              <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+              <div class="Pushbutton pushbutton_disabled" id="pbx"></div>
+            </div>
+
+
+          </div>
+
+          <div class="w3-rest"></div>
+        </div>
+       </div>
+
+   </div>
+
+   <!-- SALIDAS del circuito -->
+   <div class="w3-card-4 w3-margin w3-round-large">
+     <header class="w3-container w3-green w3-text-white">
+       <h5><b>OUTPUTS</b></h5>
+     </header>
+
+    <!-- LEDs -->
+     <div class="w3-container">
+       <div class="w3-row">
+
+        <!-- Grupo: Leds -->
+        <div class="w3-col w3-center" style="width:1000px">
+          <p class="w3-margin-top w3-text-green" style="margin:0px">LEDs</p>
+          <div class="w3-container">
+            <div class="w3-row">
+
+              <!-- LED 15 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="leda"></div>
+              </div>
+
+              <!-- LED 14 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledb"></div>
+              </div>
+
+              <!-- LED 13 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledc"></div>
+              </div>
+
+              <!-- LED 12 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledd"></div>
+              </div>
+
+              <!-- LED 11 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="lede"></div>
+              </div>
+
+              <!-- LED 10 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledf"></div>
+              </div>
+
+              <!-- LED 9 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledg"></div>
+              </div>
+
+              <!-- LED 8 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledh"></div>
+              </div>
+
+              <!-- LED 7 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledi"></div>
+              </div>
+
+              <!-- LED 6 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledj"></div>
+              </div>
+
+              <!-- LED 5 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledk"></div>
+              </div>
+
+              <!-- LED 4 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledl"></div>
+              </div>
+
+              <!-- LED 3 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledm"></div>
+              </div>
+
+              <!-- LED 2 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledn"></div>
+              </div>
+
+              <!-- LED 1 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledo"></div>
+              </div>
+
+              <!-- LED 0 -->
+              <div class="w3-col w3-center" style="width:54px">
+                <p class="w3-margin-top" style="margin:0px"><b>-</b></p>
+                <div class="Led led_disabled" id="ledp"></div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+         <div class="w3-rest"></div>
+       </div>
+      </div>
+   </div>
+
+   <!-- Parte inferior: Enlaces -->
+   <div class="w3-container w3-margin-top">
+     <a class="w3-btn w3-sand" href="https://github.com/FPGAwars/LOVE-FPGA/raw/master/Web-panels/04-Switches-04-Buttons-08-LEDs/Panel-test.ice" download type="application/octet-stream" target="_blank">
+       Test circuit 1
+    </a>
+
+    <a class="w3-btn w3-sand" href="https://github.com/FPGAwars/LOVE-FPGA/tree/master/Web-panels/04-Switches-04-Buttons-08-LEDs" target="_blank">Github</a>
+    <a class="w3-btn w3-sand" href="https://github.com/FPGAwars/LOVE-FPGA/wiki/Panel:-4-Switches,-4-Pulsadores-y-8-LEDs" target="_blank">DOC</a>
+   </div>
+
+
+  </body>
+</html>
