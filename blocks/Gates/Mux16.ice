@@ -52,7 +52,7 @@
           "id": "17c888f9-52dc-4113-9fd5-cba733f6123b",
           "type": "basic.input",
           "data": {
-            "name": "",
+            "name": "a",
             "range": "[15:0]",
             "pins": [
               {
@@ -429,7 +429,7 @@
           "id": "e52f4f63-9d37-4935-a0c2-4c129e12fe9e",
           "type": "basic.input",
           "data": {
-            "name": "",
+            "name": "b",
             "range": "[15:0]",
             "pins": [
               {
