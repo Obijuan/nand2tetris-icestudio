@@ -1283,7 +1283,7 @@
               "id": "033b7f55-81d4-4976-923c-7e0999582575",
               "type": "basic.memory",
               "data": {
-                "name": "mem",
+                "name": "mema",
                 "list": "0\r\n0\r\n0\r\n0\r\n0",
                 "local": false,
                 "format": 10
@@ -1301,7 +1301,7 @@
               "id": "ba007b15-e764-43fb-9dce-9bae0aab2a77",
               "type": "basic.memory",
               "data": {
-                "name": "mem",
+                "name": "memb",
                 "list": "0\r\n0\r\n0\r\n0\r\n0",
                 "local": false,
                 "format": 10
@@ -1514,8 +1514,7 @@
             {
               "source": {
                 "block": "4f30c8ae-620b-4fcf-808b-3aa975346639",
-                "port": "93defa79-7f79-4614-8e5b-17ceacc8c7cf",
-                "size": 10
+                "port": "93defa79-7f79-4614-8e5b-17ceacc8c7cf"
               },
               "target": {
                 "block": "257890f8-bd45-4e64-8365-4aafacb20750",
@@ -1564,8 +1563,7 @@
               },
               "target": {
                 "block": "1ef5531f-79ae-48b3-8525-666e842223eb",
-                "port": "25a96007-407b-4358-b321-d2b3411796a6",
-                "size": 10
+                "port": "25a96007-407b-4358-b321-d2b3411796a6"
               },
               "vertices": [
                 {
@@ -1748,16 +1746,14 @@
               },
               "target": {
                 "block": "fb56b60d-42ea-4853-ad92-647e42ad6c32",
-                "port": "in",
-                "size": 16
+                "port": "in"
               },
               "size": 16
             },
             {
               "source": {
                 "block": "51ef38b9-5c14-4e52-b088-94f9db2015fe",
-                "port": "out",
-                "size": 16
+                "port": "out"
               },
               "target": {
                 "block": "3757eda7-e7aa-496b-b2a3-a1fed2c57010",
@@ -1768,8 +1764,7 @@
             {
               "source": {
                 "block": "f89070c6-a5b4-4527-a4a3-f1500da4750b",
-                "port": "f9c58d8f-75fc-4483-b0d2-d584a555b1c5",
-                "size": 16
+                "port": "f9c58d8f-75fc-4483-b0d2-d584a555b1c5"
               },
               "target": {
                 "block": "1d5b102c-1c67-490a-b422-ad7a44de3ffb",
@@ -1784,8 +1779,7 @@
               },
               "target": {
                 "block": "af494ba8-7687-4234-810d-a2bec63410a4",
-                "port": "a783a9c7-cbb5-425f-9006-779ca8a21999",
-                "size": 16
+                "port": "a783a9c7-cbb5-425f-9006-779ca8a21999"
               },
               "size": 16
             },
@@ -1796,8 +1790,7 @@
               },
               "target": {
                 "block": "6e6b63a2-32fd-4d87-9e25-f9e5a470b2ff",
-                "port": "a783a9c7-cbb5-425f-9006-779ca8a21999",
-                "size": 16
+                "port": "a783a9c7-cbb5-425f-9006-779ca8a21999"
               },
               "size": 16
             },
@@ -1808,8 +1801,7 @@
               },
               "target": {
                 "block": "78ebac51-4ff6-4d87-9722-cf8ce6d97239",
-                "port": "in",
-                "size": 16
+                "port": "in"
               },
               "vertices": [],
               "size": 16
@@ -1817,8 +1809,7 @@
             {
               "source": {
                 "block": "c9fa915e-ff4d-47a4-bdd7-38adbeeb6931",
-                "port": "f9c58d8f-75fc-4483-b0d2-d584a555b1c5",
-                "size": 16
+                "port": "f9c58d8f-75fc-4483-b0d2-d584a555b1c5"
               },
               "target": {
                 "block": "fe6bb53e-c5c7-4e8c-b100-aee0baea666f",
@@ -1856,8 +1847,7 @@
               },
               "target": {
                 "block": "718d084d-d8de-4bc3-9138-4c76faec3ddd",
-                "port": "a783a9c7-cbb5-425f-9006-779ca8a21999",
-                "size": 16
+                "port": "a783a9c7-cbb5-425f-9006-779ca8a21999"
               },
               "vertices": [],
               "size": 16
