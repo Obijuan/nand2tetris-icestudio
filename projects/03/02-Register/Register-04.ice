@@ -252,6 +252,30 @@
       "wires": [
         {
           "source": {
+            "block": "3bc9c1d8-1559-4d1b-9ead-f0925d9f4806",
+            "port": "2bf9b204-c90d-419e-a56b-5adff1708456",
+            "size": 16
+          },
+          "target": {
+            "block": "0900e4ba-51be-4c90-9d14-7fb94e665fb9",
+            "port": "inlabel"
+          },
+          "size": 16
+        },
+        {
+          "source": {
+            "block": "68833d74-a6d8-4315-a5fd-6dc9cf4209ad",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "14f7b717-f289-49f1-b87f-c0926eab1bf6",
+            "port": "a9b9e357-9af3-41ef-bbb7-0742430be367",
+            "size": 16
+          },
+          "size": 16
+        },
+        {
+          "source": {
             "block": "14f7b717-f289-49f1-b87f-c0926eab1bf6",
             "port": "5caa35dc-5eed-4836-9eff-62c12811d726"
           },
@@ -280,28 +304,6 @@
             "block": "3bc9c1d8-1559-4d1b-9ead-f0925d9f4806",
             "port": "ef2383bf-0698-48b6-a787-a5c51f75da1d"
           }
-        },
-        {
-          "source": {
-            "block": "3bc9c1d8-1559-4d1b-9ead-f0925d9f4806",
-            "port": "2bf9b204-c90d-419e-a56b-5adff1708456"
-          },
-          "target": {
-            "block": "0900e4ba-51be-4c90-9d14-7fb94e665fb9",
-            "port": "inlabel"
-          },
-          "size": 16
-        },
-        {
-          "source": {
-            "block": "68833d74-a6d8-4315-a5fd-6dc9cf4209ad",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "14f7b717-f289-49f1-b87f-c0926eab1bf6",
-            "port": "a9b9e357-9af3-41ef-bbb7-0742430be367"
-          },
-          "size": 16
         }
       ]
     }
@@ -5324,7 +5326,7 @@
               "data": {
                 "name": "",
                 "value": "0",
-                "local": false
+                "local": true
               },
               "position": {
                 "x": 856,
@@ -5381,7 +5383,7 @@
               "data": {
                 "name": "",
                 "value": "0",
-                "local": false
+                "local": true
               },
               "position": {
                 "x": 1592,
