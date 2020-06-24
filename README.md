@@ -10,3 +10,8 @@ The Nand2tetris course, using icestudio for building hardware on Opensource FPGA
 
 ![](wiki/img/Nand2tetris-02-index.png)
 ![](wiki/img/Nand2tetris-02.gif)
+
+## Project 03: Sequential Logic
+
+![](wiki/img/Nand2tetris-03-index.png)
+![](wiki/img/Nand2tetris-03.gif)
