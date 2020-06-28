@@ -18728,7 +18728,7 @@
         "version": "0.1",
         "description": "Hack control unit",
         "author": "Juan González-Gómez (Obijuan)",
-        "image": "%3Csvg%20viewBox=%220%200%2032%2032%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath%20d=%22M16%206.958a1%201%200%200%201-1-1V2.042a1%201%200%200%201%202%200v3.917a1%201%200%200%201-1%201zM11%207a1%201%200%200%201-1-1V2a1%201%200%200%201%202%200v4a1%201%200%200%201-1%201zM21%207a1%201%200%200%201-1-1V2a1%201%200%201%201%202%200v4a1%201%200%200%201-1%201zM16%2030.959a1%201%200%200%201-1-1v-3.917a1%201%200%200%201%202%200v3.916a1%201%200%200%201-1%201zM11%2031a1%201%200%200%201-1-1v-4a1%201%200%200%201%202%200v4a1%201%200%200%201-1%201zM21%2031a1%201%200%200%201-1-1v-4a1%201%200%201%201%202%200v4a1%201%200%200%201-1%201z%22%20fill=%22#4391B2%22/%3E%3Cg%3E%3Cpath%20d=%22M5.958%2017H2.042a1%201%200%200%201%200-2h3.917a1%201%200%200%201%200%202zM6%2022H2a1%201%200%200%201%200-2h4a1%201%200%200%201%200%202zM6%2012H2a1%201%200%200%201%200-2h4a1%201%200%200%201%200%202zM29.958%2017h-3.916a1%201%200%201%201%200-2h3.916a1%201%200%201%201%200%202zM30%2022h-4a1%201%200%201%201%200-2h4a1%201%200%201%201%200%202zM30%2012h-4a1%201%200%201%201%200-2h4a1%201%200%201%201%200%202z%22%20fill=%22#4391B2%22/%3E%3C/g%3E%3Cg%3E%3Cpath%20d=%22M27%206v20c0%20.55-.45%201-1%201H6c-.55%200-1-.45-1-1V6c0-.55.45-1%201-1h20c.55%200%201%20.45%201%201z%22%20fill=%22#48B1DD%22/%3E%3C/g%3E%3Cg%3E%3Cpath%20d=%22M23%2012v8c0%201.65-1.35%203-3%203h-8c-1.65%200-3-1.35-3-3v-8c0-1.65%201.35-3%203-3h8c1.65%200%203%201.35%203%203z%22%20fill=%22#96CEE5%22/%3E%3C/g%3E%3C/svg%3E",
+        "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22368.209%22%20height=%22118.568%22%20version=%221%22%3E%3Ctext%20style=%22line-height:0%25;text-align:center%22%20x=%22182.613%22%20y=%2236.402%22%20font-weight=%22400%22%20font-size=%2213.435%22%20font-family=%22sans-serif%22%20letter-spacing=%220%22%20word-spacing=%220%22%20text-anchor=%22middle%22%20fill=%22#00f%22%3E%3Ctspan%20x=%22182.613%22%20y=%2236.402%22%20style=%22line-height:1.25;-inkscape-font-specification:'sans-serif%20Bold';text-align:center%22%20font-weight=%22700%22%20font-size=%2264.997%22%3E%C2%B5-ops%3C/tspan%3E%3Ctspan%20x=%22182.613%22%20y=%22117.648%22%20style=%22line-height:1.25;-inkscape-font-specification:'sans-serif%20Bold';text-align:center%22%20font-weight=%22700%22%20font-size=%2264.997%22%3EGenerator%3C/tspan%3E%3C/text%3E%3C/svg%3E",
         "otid": 1593336820530
       },
       "design": {
@@ -22183,8 +22183,7 @@
               },
               "target": {
                 "block": "156e15db-4479-47ab-ad56-d616e92da28c",
-                "port": "fd3449b1-bc90-4312-8654-0a9d34f90f72",
-                "size": 3
+                "port": "fd3449b1-bc90-4312-8654-0a9d34f90f72"
               },
               "vertices": [],
               "size": 3
@@ -22536,8 +22535,7 @@
             {
               "source": {
                 "block": "4fe57860-f6fd-4dee-b8f1-dcd39efdd0ed",
-                "port": "f58fa76e-f97a-40c3-b28a-73889c6b3596",
-                "size": 15
+                "port": "f58fa76e-f97a-40c3-b28a-73889c6b3596"
               },
               "target": {
                 "block": "587caa49-1107-471e-8679-0982fd4ae54f",
@@ -22560,8 +22558,7 @@
             {
               "source": {
                 "block": "4fe57860-f6fd-4dee-b8f1-dcd39efdd0ed",
-                "port": "74afb6cf-3ebe-470f-aa3c-e212ab650d4c",
-                "size": 3
+                "port": "74afb6cf-3ebe-470f-aa3c-e212ab650d4c"
               },
               "target": {
                 "block": "b5be593e-ca05-49ac-89ad-9a30447da109",
@@ -22573,8 +22570,7 @@
             {
               "source": {
                 "block": "4fe57860-f6fd-4dee-b8f1-dcd39efdd0ed",
-                "port": "3bfe9da0-5c18-4d0d-8d3d-40cb62430b12",
-                "size": 3
+                "port": "3bfe9da0-5c18-4d0d-8d3d-40cb62430b12"
               },
               "target": {
                 "block": "cb8fcad3-8714-4c1e-9952-eeea20154935",
@@ -22586,8 +22582,7 @@
             {
               "source": {
                 "block": "4fe57860-f6fd-4dee-b8f1-dcd39efdd0ed",
-                "port": "c12be85a-eba0-47d1-b35a-67f9f781c03b",
-                "size": 6
+                "port": "c12be85a-eba0-47d1-b35a-67f9f781c03b"
               },
               "target": {
                 "block": "747eeca4-5f54-43d9-aa8c-610afc5b3a67",
@@ -22603,8 +22598,7 @@
               },
               "target": {
                 "block": "4fe57860-f6fd-4dee-b8f1-dcd39efdd0ed",
-                "port": "11b9b45a-88ce-4946-b4b3-45e1b9f396fc",
-                "size": 16
+                "port": "11b9b45a-88ce-4946-b4b3-45e1b9f396fc"
               },
               "vertices": [],
               "size": 16
@@ -22612,8 +22606,7 @@
             {
               "source": {
                 "block": "ef85c7ab-59f7-4183-8091-58db56d3456c",
-                "port": "out",
-                "size": 16
+                "port": "out"
               },
               "target": {
                 "block": "db6cf632-d56b-491b-8194-a4b49d5a5c8c",
@@ -22661,8 +22654,7 @@
               },
               "target": {
                 "block": "2ab44be0-1c3f-405d-b94b-dee2eed7a195",
-                "port": "fd3449b1-bc90-4312-8654-0a9d34f90f72",
-                "size": 3
+                "port": "fd3449b1-bc90-4312-8654-0a9d34f90f72"
               },
               "vertices": [],
               "size": 3
@@ -22820,8 +22812,7 @@
               },
               "target": {
                 "block": "9167c6fb-da8b-4ea6-8cf9-85422f105cfe",
-                "port": "in",
-                "size": 6
+                "port": "in"
               },
               "size": 6
             },
@@ -22832,8 +22823,7 @@
               },
               "target": {
                 "block": "5319d211-2ee5-4a6a-9ef8-d9dea81fdb4a",
-                "port": "23b6195b-3ff2-4c72-9b74-2598d325ef9c",
-                "size": 15
+                "port": "23b6195b-3ff2-4c72-9b74-2598d325ef9c"
               },
               "vertices": [],
               "size": 15
