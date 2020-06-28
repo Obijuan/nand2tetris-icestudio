@@ -145,7 +145,21 @@ D=A
 @SCREEN
 M=D
 
+//----------------- Test 9: JNE
+D=1
+@test9_ok
+D;JNE
 
+@error
+0;JMP
+
+//-- Test 9 was ok
+//-- Write 9 in the LEDs
+(test9_ok)
+@9
+D=A
+@SCREEN
+M=D
 
 (stop)
 @stop
