@@ -121,6 +121,32 @@ D=A
 @SCREEN
 M=D
 
+//---------------- Test 8: JGE
+D=1
+@test8_2
+D;JGE
+
+@error
+0;JMP
+
+(test8_2)
+D=0
+@test8_ok
+D;JGE
+
+@error
+0;JMP
+
+//-- Test 8 was ok
+//-- Write 8 in the LEDs
+(test8_ok)
+@8
+D=A
+@SCREEN
+M=D
+
+
+
 (stop)
 @stop
 0;JMP
