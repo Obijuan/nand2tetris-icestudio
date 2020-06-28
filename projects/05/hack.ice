@@ -24971,8 +24971,8 @@
                 "clock": true
               },
               "position": {
-                "x": -40,
-                "y": -120
+                "x": 64,
+                "y": -64
               }
             },
             {
@@ -24991,8 +24991,8 @@
                 "virtual": true
               },
               "position": {
-                "x": 104,
-                "y": -120
+                "x": 208,
+                "y": -64
               }
             },
             {
@@ -25010,8 +25010,8 @@
                 "virtual": false
               },
               "position": {
-                "x": 2208,
-                "y": -80
+                "x": 1992,
+                "y": -8
               }
             },
             {
@@ -25031,8 +25031,8 @@
                 "oldBlockColor": "fuchsia"
               },
               "position": {
-                "x": 2064,
-                "y": -80
+                "x": 1848,
+                "y": -8
               }
             },
             {
@@ -25044,8 +25044,8 @@
                 "virtual": false
               },
               "position": {
-                "x": -40,
-                "y": -40
+                "x": 64,
+                "y": 16
               }
             },
             {
@@ -25065,29 +25065,8 @@
                 "oldBlockColor": "fuchsia"
               },
               "position": {
-                "x": 112,
-                "y": -40
-              }
-            },
-            {
-              "id": "8e3547a6-e324-49cc-8f1d-c5cd000de600",
-              "type": "basic.outputLabel",
-              "data": {
-                "blockColor": "fuchsia",
-                "name": "fetch",
-                "pins": [
-                  {
-                    "index": "0",
-                    "name": "NULL",
-                    "value": "NULL"
-                  }
-                ],
-                "virtual": true,
-                "oldBlockColor": "fuchsia"
-              },
-              "position": {
-                "x": 1856,
-                "y": 0
+                "x": 216,
+                "y": 16
               }
             },
             {
@@ -25106,8 +25085,8 @@
                 "virtual": true
               },
               "position": {
-                "x": 488,
-                "y": 0
+                "x": 616,
+                "y": 88
               }
             },
             {
@@ -25119,8 +25098,8 @@
                 "virtual": false
               },
               "position": {
-                "x": -40,
-                "y": 40
+                "x": 64,
+                "y": 96
               }
             },
             {
@@ -25140,8 +25119,29 @@
                 "oldBlockColor": "fuchsia"
               },
               "position": {
-                "x": 112,
-                "y": 40
+                "x": 216,
+                "y": 96
+              }
+            },
+            {
+              "id": "8e3547a6-e324-49cc-8f1d-c5cd000de600",
+              "type": "basic.outputLabel",
+              "data": {
+                "blockColor": "fuchsia",
+                "name": "fetch",
+                "pins": [
+                  {
+                    "index": "0",
+                    "name": "NULL",
+                    "value": "NULL"
+                  }
+                ],
+                "virtual": true,
+                "oldBlockColor": "fuchsia"
+              },
+              "position": {
+                "x": 1736,
+                "y": 112
               }
             },
             {
@@ -25170,8 +25170,8 @@
                 "virtual": false
               },
               "position": {
-                "x": 2232,
-                "y": 56
+                "x": 2112,
+                "y": 168
               }
             },
             {
@@ -25190,8 +25190,8 @@
                 "virtual": true
               },
               "position": {
-                "x": 1856,
-                "y": 56
+                "x": 1736,
+                "y": 168
               }
             },
             {
@@ -25211,8 +25211,8 @@
                 "oldBlockColor": "fuchsia"
               },
               "position": {
-                "x": 1856,
-                "y": 112
+                "x": 1736,
+                "y": 224
               }
             },
             {
@@ -25461,7 +25461,7 @@
               },
               "position": {
                 "x": 176,
-                "y": 736
+                "y": 824
               }
             },
             {
@@ -25482,7 +25482,7 @@
               },
               "position": {
                 "x": 176,
-                "y": 800
+                "y": 888
               }
             },
             {
@@ -25494,24 +25494,24 @@
                 "local": false
               },
               "position": {
-                "x": 336,
-                "y": -120
+                "x": 464,
+                "y": -32
               }
             },
             {
               "id": "4bd9dd4b-0d6b-4d16-9240-70f803212b91",
               "type": "basic.info",
               "data": {
-                "info": "Fetch",
+                "info": "When the rst button is pressed  \nal the DFF are reset",
                 "readonly": true
               },
               "position": {
-                "x": 1120,
-                "y": 440
+                "x": 864,
+                "y": 728
               },
               "size": {
-                "width": 72,
-                "height": 32
+                "width": 256,
+                "height": 48
               }
             },
             {
@@ -25554,16 +25554,16 @@
               "id": "ec7ebeb5-af2e-461a-8284-9ce4e2b43ebe",
               "type": "basic.info",
               "data": {
-                "info": "next",
+                "info": "next: The PC  \nis updated",
                 "readonly": true
               },
               "position": {
-                "x": 2000,
-                "y": 480
+                "x": 1984,
+                "y": 456
               },
               "size": {
-                "width": 72,
-                "height": 32
+                "width": 120,
+                "height": 56
               }
             },
             {
@@ -25618,24 +25618,24 @@
               "id": "218aa1e8-90d2-4d25-9705-65f2e2da10ed",
               "type": "basic.info",
               "data": {
-                "info": "Execution",
+                "info": "Execution:  \nA and D register are loaded  \nwith their new values",
                 "readonly": true
               },
               "position": {
-                "x": 1560,
-                "y": 456
+                "x": 1528,
+                "y": 376
               },
               "size": {
-                "width": 104,
-                "height": 32
+                "width": 232,
+                "height": 64
               }
             },
             {
               "id": "8d66df19-75ad-4973-b812-6c76a0be47d6",
               "type": "3ba5d0ecbd8f55582a6307158732789df06cb74c",
               "position": {
-                "x": 336,
-                "y": 0
+                "x": 464,
+                "y": 88
               },
               "size": {
                 "width": 96,
@@ -25646,8 +25646,8 @@
               "id": "dfd9bb1e-ae0a-4af5-8ecc-ec538b5966ce",
               "type": "d9c150039ecfa8537d948909c88908ad0bcfc07b",
               "position": {
-                "x": 2040,
-                "y": 40
+                "x": 1920,
+                "y": 152
               },
               "size": {
                 "width": 96,
@@ -25731,11 +25731,123 @@
               "type": "c0069cedb8513ceb624264335a0db8465ac8f3e6",
               "position": {
                 "x": 336,
-                "y": 784
+                "y": 872
               },
               "size": {
                 "width": 96,
                 "height": 64
+              }
+            },
+            {
+              "id": "5f6c6a24-db7b-4394-843d-d8830c27f733",
+              "type": "basic.info",
+              "data": {
+                "info": "Debug Mode:  \n0: Off. CPU running at maximum speed  \n1: On. Step by step execution",
+                "readonly": true
+              },
+              "position": {
+                "x": 600,
+                "y": -32
+              },
+              "size": {
+                "width": 304,
+                "height": 72
+              }
+            },
+            {
+              "id": "204578d2-302d-4a9e-8aec-12c151b975b2",
+              "type": "basic.info",
+              "data": {
+                "info": "Select the signal to start  \na new instruction:  \n* When the previous has finised \n* step signal from outside (debug)",
+                "readonly": true
+              },
+              "position": {
+                "x": 488,
+                "y": 296
+              },
+              "size": {
+                "width": 384,
+                "height": 88
+              }
+            },
+            {
+              "id": "a9aa78ea-877d-40cf-9498-fc50748626bc",
+              "type": "basic.info",
+              "data": {
+                "info": "Starting after a hardware reset",
+                "readonly": true
+              },
+              "position": {
+                "x": 328,
+                "y": 616
+              },
+              "size": {
+                "width": 264,
+                "height": 40
+              }
+            },
+            {
+              "id": "046b904a-f72b-4145-99a8-d22c2b9bef36",
+              "type": "basic.info",
+              "data": {
+                "info": "Starting after the rst button  \nis pressed (one cycle later)",
+                "readonly": true
+              },
+              "position": {
+                "x": 256,
+                "y": 768
+              },
+              "size": {
+                "width": 248,
+                "height": 56
+              }
+            },
+            {
+              "id": "a598d7e5-ef84-4fc7-b3ce-58c641d10fe5",
+              "type": "basic.info",
+              "data": {
+                "info": "Running started",
+                "readonly": true
+              },
+              "position": {
+                "x": 632,
+                "y": 728
+              },
+              "size": {
+                "width": 152,
+                "height": 40
+              }
+            },
+            {
+              "id": "34af47a3-8278-4ce4-9153-6cef1b8f20a4",
+              "type": "basic.info",
+              "data": {
+                "info": "Instruction Fetch:  \nThe isntruction has been read  \nfrom memory and it is available",
+                "readonly": true
+              },
+              "position": {
+                "x": 1088,
+                "y": 352
+              },
+              "size": {
+                "width": 264,
+                "height": 72
+              }
+            },
+            {
+              "id": "cddec7fe-9146-4731-8978-2a4633f66e78",
+              "type": "basic.info",
+              "data": {
+                "info": "## Sequencer  \n\nEach instruction takes 3 clock cycles:  \n* Fetch\n* Execution\n* Next (PC recalculation)",
+                "readonly": true
+              },
+              "position": {
+                "x": 1040,
+                "y": 32
+              },
+              "size": {
+                "width": 392,
+                "height": 120
               }
             }
           ],
