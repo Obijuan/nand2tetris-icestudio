@@ -105,6 +105,22 @@ D=A
 @SCREEN
 M=D
 
+//--------------- Test 7: JGT
+D=1
+@test7_ok
+D;JGT
+
+@error
+0;JMP
+
+//-- Test 7 was ok
+//-- Write 7 in the LEDs
+(test7_ok)
+@7
+D=A
+@SCREEN
+M=D
+
 (stop)
 @stop
 0;JMP
