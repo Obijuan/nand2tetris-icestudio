@@ -161,6 +161,27 @@ D=A
 @SCREEN
 M=D
 
+//----------------- Test 10: A reg
+@1
+A=0
+A=A+1
+D=1
+D=A-1
+@test10_ok
+D;JEQ
+
+@error
+0;JMP
+
+//-- Test 10 was ok
+//-- Write 10 in the LEDs
+(test10_ok)
+@10
+D=A
+@SCREEN
+M=D
+
+
 (stop)
 @stop
 0;JMP
