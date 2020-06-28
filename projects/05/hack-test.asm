@@ -65,6 +65,22 @@ D=A
 @SCREEN
 M=D
 
+//------------- Test 5: JEQ
+D=0
+@test5_ok
+D;JEQ
+
+@error
+0;JMP
+
+//-- Test 5 was ok
+//-- Write 5 in the LEDs
+(test5_ok)
+@5
+D=A
+@SCREEN
+M=D
+
 (stop)
 @stop
 0;JMP
