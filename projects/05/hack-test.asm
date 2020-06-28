@@ -81,6 +81,30 @@ D=A
 @SCREEN
 M=D
 
+//-------------- Test 6: JLE
+D=0
+@test6_2
+D;JLE
+
+@error
+0;JMP
+
+(test6_2)
+D=-1
+@test6_ok
+D;JLE
+
+@error
+0;JMP
+
+//-- Test 6 was ok
+//-- Write 6 in the LEDs
+(test6_ok)
+@6
+D=A
+@SCREEN
+M=D
+
 (stop)
 @stop
 0;JMP
