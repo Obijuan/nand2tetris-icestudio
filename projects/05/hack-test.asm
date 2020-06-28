@@ -41,9 +41,26 @@ M=D
 0;JMP
 
 //-- Test 3 was ok
-//-- Write 2 in the LEDs
+//-- Write 3 in the LEDs
 (test3_ok)
 @3
+D=A
+@SCREEN
+M=D
+
+//-- Test 4: JLT
+D=0
+D=D-1
+@test4_ok
+D;JLT
+
+@error
+0;JMP
+
+//-- Test 4 was ok
+//-- Write 4 in the LEDs
+(test4_ok)
+@4
 D=A
 @SCREEN
 M=D
