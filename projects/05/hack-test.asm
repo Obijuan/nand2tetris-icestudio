@@ -2,7 +2,8 @@
 
 //-- Test 1: Store test
 //-- Write value 1 in the LEDs
-D=1
+@1
+D=A
 @SCREEN
 M=D
 
@@ -27,6 +28,22 @@ M=D
 //-- Write 2 in the LEDs
 (test2_ok)
 @2
+D=A
+@SCREEN
+M=D
+
+//-- Test3: unconditional jump
+@test3_ok
+0;JMP
+
+//-- This should not be reached
+@error
+0;JMP
+
+//-- Test 3 was ok
+//-- Write 2 in the LEDs
+(test3_ok)
+@3
 D=A
 @SCREEN
 M=D
