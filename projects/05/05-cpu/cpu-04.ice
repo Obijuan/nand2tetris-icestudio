@@ -1028,8 +1028,8 @@
           "id": "8b352c33-2ee6-4a94-b18e-4bd9dadbd6db",
           "type": "basic.memory",
           "data": {
-            "name": "02-jmp-inf.asm",
-            "list": "0000000000000000\n1110101010000111",
+            "name": "03-init-D.hack",
+            "list": "0000000001100100\n1110110000010000\n0000000000000010\n1110101010000111\n",
             "local": false,
             "format": 10
           },
@@ -1179,16 +1179,16 @@
           "id": "27adfc60-f126-4432-a7df-37eb14e7bd40",
           "type": "basic.info",
           "data": {
-            "info": "Instructions to \nexecute",
+            "info": "Program to execute",
             "readonly": true
           },
           "position": {
-            "x": 2776,
-            "y": 448
+            "x": 2784,
+            "y": 440
           },
           "size": {
-            "width": 152,
-            "height": 56
+            "width": 168,
+            "height": 40
           }
         },
         {
