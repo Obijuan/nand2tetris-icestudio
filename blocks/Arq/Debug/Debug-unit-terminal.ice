@@ -1,9 +1,9 @@
 {
   "version": "1.2",
   "package": {
-    "name": "Debug-unit",
+    "name": "Debug-unit-terminal",
     "version": "0.1",
-    "description": "Debug Unit for the Hack",
+    "description": "Debug Unit for the Hack in the serial console",
     "author": "Juan González-Gómez (Obijuan)",
     "image": "%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20width=%22295.232%22%20height=%22317.439%22%20viewBox=%22-87.947%20-82%20295.23215%20317.43942%22%3E%3Cdefs%3E%3ClinearGradient%20id=%22c%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#2d2839%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#282433%22/%3E%3C/linearGradient%3E%3ClinearGradient%20id=%22b%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#fff%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#fff%22%20stop-opacity=%22.094%22/%3E%3C/linearGradient%3E%3ClinearGradient%20id=%22a%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#77767b%22/%3E%3Cstop%20offset=%22.05%22%20stop-color=%22#c0bfbc%22/%3E%3Cstop%20offset=%22.1%22%20stop-color=%22#9a9996%22/%3E%3Cstop%20offset=%22.9%22%20stop-color=%22#9a9996%22/%3E%3Cstop%20offset=%22.95%22%20stop-color=%22#c0bfbc%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#77767b%22/%3E%3C/linearGradient%3E%3ClinearGradient%20gradientUnits=%22userSpaceOnUse%22%20y2=%2244%22%20x2=%22464%22%20y1=%2244%22%20x1=%2248%22%20id=%22q%22%20xlink:href=%22#a%22/%3E%3CradialGradient%20gradientUnits=%22userSpaceOnUse%22%20gradientTransform=%22matrix(-4.72727%200%200%20-1.63636%20238.545%2049.766)%22%20r=%2244%22%20fy=%22194.19%22%20fx=%2264%22%20cy=%22194.19%22%20cx=%2264%22%20id=%22r%22%20xlink:href=%22#b%22/%3E%3ClinearGradient%20gradientUnits=%22userSpaceOnUse%22%20y2=%22269.137%22%20x2=%2270.347%22%20y1=%22245.395%22%20x1=%2270.347%22%20id=%22s%22%20xlink:href=%22#c%22/%3E%3C/defs%3E%3Cg%20transform=%22translate(0%2020.508)%22%3E%3ClinearGradient%20id=%22d%22%20gradientUnits=%22userSpaceOnUse%22%20x1=%22169.697%22%20y1=%22192.779%22%20x2=%223.477%22%20y2=%22-100.471%22%20gradientTransform=%22matrix(1%200%200%20-1%200%20108.875)%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#a6a6a6%22/%3E%3Cstop%20offset=%22.028%22%20stop-color=%22#8b8b8b%22/%3E%3Cstop%20offset=%22.073%22%20stop-color=%22#666%22/%3E%3Cstop%20offset=%22.121%22%20stop-color=%22#464646%22/%3E%3Cstop%20offset=%22.173%22%20stop-color=%22#2d2d2d%22/%3E%3Cstop%20offset=%22.231%22%20stop-color=%22#191919%22/%3E%3Cstop%20offset=%22.296%22%20stop-color=%22#0b0b0b%22/%3E%3Cstop%20offset=%22.377%22%20stop-color=%22#020202%22/%3E%3Cstop%20offset=%22.516%22/%3E%3C/linearGradient%3E%3Cpath%20fill=%22url(#d)%22%20stroke=%22#000%22%20d=%22M-73.129%20128.031s-6.306%2014.865-5.405%2021.622l-7.208-.454s-3.603-26.579%203.603-38.288C-74.932%2099.197%2092.192-46.753%2092.192-46.753s31.082-18.017%2061.713-3.151c0%200%2027.479%2022.071%204.505%2065.315%200%200%200%2038.293-3.153%2041.444-3.154%203.151%2013.517%202.254%2026.128-8.108%200%200-7.66%2020.72-23.426%2025.677%200%200%2016.893%2012.838%2021.171%2028.828%200%200%205.408%2013.514%2014.417%2020.271%200%200-15.654.228-26.804-15.313%200%200-10.249-22.974-20.047-24.663l-.899%202.703s-31.982%2044.036-46.848%2056.647c0%200-.003%2021.622-10.362%2039.19l-5.405.897s8.56-27.028%201.803-28.828l-18.02%204.957s-20.723%2049.548-27.028%2054.504H33.18s15.541-36.371%209.235-42.23z%22/%3E%3CradialGradient%20id=%22e%22%20cx=%229.761%22%20cy=%2295.889%22%20r=%22217.495%22%20gradientTransform=%22matrix(1.0668%20-.0121%20.0121%20-1.0559%2017.894%20121.505)%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%22.313%22%20stop-color=%22#fa5151%22/%3E%3Cstop%20offset=%22.339%22%20stop-color=%22#f24e4e%22/%3E%3Cstop%20offset=%22.379%22%20stop-color=%22#dc4747%22/%3E%3Cstop%20offset=%22.429%22%20stop-color=%22#b83c3c%22/%3E%3Cstop%20offset=%22.486%22%20stop-color=%22#862c2c%22/%3E%3Cstop%20offset=%22.548%22%20stop-color=%22#471717%22/%3E%3Cstop%20offset=%22.61%22%20stop-color=%22#010101%22/%3E%3C/radialGradient%3E%3Cpath%20fill=%22url(#e)%22%20d=%22M-74.821%20135.244c30.562%2047.26%20104.705%2053.647%20165.606%2014.262%2060.908-39.381%2085.513-109.615%2054.97-156.874C115.189-54.626%2041.044-61.018-19.86-21.634-80.771%2017.75-105.376%2087.99-74.821%20135.244z%22/%3E%3ClinearGradient%20id=%22f%22%20gradientUnits=%22userSpaceOnUse%22%20x1=%2242.772%22%20y1=%2282.857%22%20x2=%2212.138%22%20y2=%22-53.183%22%20gradientTransform=%22matrix(1%200%200%20-1%200%20108.875)%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#fff%22/%3E%3Cstop%20offset=%22.72%22/%3E%3C/linearGradient%3E%3Cpath%20opacity=%22.32%22%20fill=%22url(#f)%22%20stroke=%22#000%22%20d=%22M-73.257%20131.426c30.69%2047.462%20103.931%2054.673%20163.588%2016.095C149.985%20108.948%20173.474%2039.2%20142.79-8.265%20112.097-55.726%2038.858-62.934-20.801-24.359c-59.662%2038.573-83.146%20108.322-52.456%20155.785z%22/%3E%3Ccircle%20fill=%22#fff%22%20stroke=%22#000%22%20stroke-width=%22.5%22%20cx=%22151.653%22%20cy=%22-27.72%22%20r=%224.954%22/%3E%3CradialGradient%20id=%22g%22%20cx=%22177.893%22%20cy=%22164.185%22%20r=%2223.623%22%20gradientTransform=%22matrix(1%200%200%20-1%200%20108.875)%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#020202%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#1d1d1d%22/%3E%3Cstop%20offset=%22.005%22%20stop-color=%22#fff%22/%3E%3Cstop%20offset=%22.006%22%20stop-color=%22#ebebeb%22/%3E%3Cstop%20offset=%22.007%22%20stop-color=%22#b7b7b7%22/%3E%3Cstop%20offset=%22.009%22%20stop-color=%22#646464%22/%3E%3Cstop%20offset=%22.011%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%22.516%22/%3E%3C/radialGradient%3E%3Cpath%20fill=%22url(#g)%22%20d=%22M153.905-39.431l-5.406-2.027%2018.92-29.731%2039.866%209.46-35.811-3.378z%22/%3E%3CradialGradient%20id=%22h%22%20cx=%2262.397%22%20cy=%22225.435%22%20r=%2214.717%22%20gradientTransform=%22matrix(1.2%200%200%20-1.2286%2034.264%20209.16)%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#020202%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#1d1d1d%22/%3E%3Cstop%20offset=%22.005%22%20stop-color=%22#fff%22/%3E%3Cstop%20offset=%22.006%22%20stop-color=%22#ebebeb%22/%3E%3Cstop%20offset=%22.007%22%20stop-color=%22#b7b7b7%22/%3E%3Cstop%20offset=%22.009%22%20stop-color=%22#646464%22/%3E%3Cstop%20offset=%22.011%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%22.516%22/%3E%3C/radialGradient%3E%3Cpath%20fill=%22url(#h)%22%20d=%22M125.863-53.621l4.055-1.689L110.254-82%2088.362-69.548l19.458-5.811z%22/%3E%3Cg%20opacity=%22.44%22%3E%3CradialGradient%20id=%22i%22%20cx=%2251.142%22%20cy=%2267.438%22%20r=%2260.208%22%20fx=%2225.142%22%20fy=%2233.438%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#f4eaea%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#eb1414%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#f4eaea%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#f5ebeb%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#f7eded%22/%3E%3Cstop%20offset=%22.138%22%20stop-color=%22#f6d8d8%22/%3E%3Cstop%20offset=%22.422%22%20stop-color=%22#f3a1a1%22/%3E%3Cstop%20offset=%22.826%22%20stop-color=%22#ee4a4a%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ec2323%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ec2525%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ed2c2c%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ee3131%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ed2e2e%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ed2c2c%22/%3E%3C/radialGradient%3E%3Cpath%20opacity=%22.83%22%20fill=%22url(#i)%22%20d=%22M-74.216%20133.014c30.69%2047.465%20104.023%2054.615%20163.791%2015.963%2059.778-38.644%2083.349-108.452%2052.67-155.917C111.55-54.401%2038.217-61.55-21.556-22.903c-59.771%2038.646-83.353%20108.457-52.66%20155.917z%22/%3E%3C/g%3E%3Cg%20opacity=%22.44%22%3E%3CradialGradient%20id=%22j%22%20cx=%22-4.858%22%20cy=%22-14.563%22%20r=%2288%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#f4eaea%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#eb1414%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#f4eaea%22/%3E%3Cstop%20offset=%22.22%22%20stop-color=%22#f7eded%22/%3E%3Cstop%20offset=%22.3%22%20stop-color=%22#f7e8e8%22/%3E%3Cstop%20offset=%22.39%22%20stop-color=%22#f6dbdb%22/%3E%3Cstop%20offset=%22.486%22%20stop-color=%22#f5c4c4%22/%3E%3Cstop%20offset=%22.585%22%20stop-color=%22#f3a4a4%22/%3E%3Cstop%20offset=%22.688%22%20stop-color=%22#f17b7b%22/%3E%3Cstop%20offset=%22.79%22%20stop-color=%22#ee4a4a%22/%3E%3Cstop%20offset=%22.863%22%20stop-color=%22#ec2323%22/%3E%3Cstop%20offset=%22.954%22%20stop-color=%22#ec2525%22/%3E%3Cstop%20offset=%22.987%22%20stop-color=%22#ed2c2c%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ee3131%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ed2e2e%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ed2c2c%22/%3E%3C/radialGradient%3E%3Cpath%20opacity=%22.83%22%20fill=%22url(#j)%22%20d=%22M-73.217%20132.014c30.69%2047.465%20104.023%2054.615%20163.791%2015.963%2059.778-38.644%2083.349-108.452%2052.67-155.917-30.694-47.461-104.027-54.61-163.8-15.963-59.771%2038.646-83.353%20108.457-52.661%20155.917z%22/%3E%3C/g%3E%3Cg%20opacity=%22.68%22%3E%3CradialGradient%20id=%22k%22%20cx=%2282.143%22%20cy=%22-19.563%22%20r=%22100.807%22%20fx=%22118.142%22%20fy=%22-8.563%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#f4eaea%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#eb1414%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#f4eaea%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#f7eded%22/%3E%3Cstop%20offset=%22.07%22%20stop-color=%22#f7e8e8%22/%3E%3Cstop%20offset=%22.15%22%20stop-color=%22#f6dbdb%22/%3E%3Cstop%20offset=%22.234%22%20stop-color=%22#f5c4c4%22/%3E%3Cstop%20offset=%22.322%22%20stop-color=%22#f3a4a4%22/%3E%3Cstop%20offset=%22.411%22%20stop-color=%22#f17c7c%22/%3E%3Cstop%20offset=%22.502%22%20stop-color=%22#ee4a4a%22/%3E%3Cstop%20offset=%22.566%22%20stop-color=%22#ec2323%22/%3E%3Cstop%20offset=%22.856%22%20stop-color=%22#ec2525%22/%3E%3Cstop%20offset=%22.96%22%20stop-color=%22#ed2c2c%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ee3131%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ed2e2e%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#ed2c2c%22/%3E%3C/radialGradient%3E%3Cpath%20opacity=%22.83%22%20fill=%22url(#k)%22%20d=%22M-73.216%20132.014c30.69%2047.465%20104.023%2054.615%20163.791%2015.963%2059.778-38.644%2083.349-108.452%2052.67-155.917-30.694-47.461-104.027-54.61-163.8-15.963-59.772%2038.646-83.354%20108.457-52.661%20155.917z%22/%3E%3C/g%3E%3CradialGradient%20id=%22l%22%20cx=%2229.125%22%20cy=%221.006%22%20r=%2227.521%22%20gradientTransform=%22scale(1%20-1)%20rotate(3.331%201901.469%20-53.442)%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#020202%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#7a6f6f%22/%3E%3Cstop%20offset=%22.148%22%20stop-color=%22#746a6a%22/%3E%3Cstop%20offset=%22.347%22%20stop-color=%22#635a5a%22/%3E%3Cstop%20offset=%22.575%22%20stop-color=%22#474141%22/%3E%3Cstop%20offset=%22.822%22%20stop-color=%22#201f1f%22/%3E%3Cstop%20offset=%22.896%22%20stop-color=%22#131313%22/%3E%3Cstop%20offset=%22.954%22%20stop-color=%22#161616%22/%3E%3Cstop%20offset=%22.999%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#1d1d1d%22/%3E%3C/radialGradient%3E%3Cpath%20fill=%22url(#l)%22%20d=%22M27.32%2076.842c12.916-.751%2024.194%2012.53%2025.191%2029.669.996%2017.138-8.667%2031.639-21.583%2032.39-12.915.751-24.193-12.531-25.19-29.669-.995-17.139%208.667-31.639%2021.582-32.39z%22/%3E%3CradialGradient%20id=%22m%22%20cx=%22117.12%22%20cy=%2259.435%22%20r=%2231.11%22%20gradientTransform=%22matrix(.9275%20.091%20.0976%20-.9952%20-1.558%20102.751)%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#020202%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#7a6f6f%22/%3E%3Cstop%20offset=%22.153%22%20stop-color=%22#756a6a%22/%3E%3Cstop%20offset=%22.343%22%20stop-color=%22#665d5d%22/%3E%3Cstop%20offset=%22.552%22%20stop-color=%22#4c4646%22/%3E%3Cstop%20offset=%22.773%22%20stop-color=%22#2a2727%22/%3E%3Cstop%20offset=%22.896%22%20stop-color=%22#131313%22/%3E%3Cstop%20offset=%22.954%22%20stop-color=%22#161616%22/%3E%3Cstop%20offset=%22.999%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#1d1d1d%22/%3E%3C/radialGradient%3E%3Cpath%20fill=%22url(#m)%22%20d=%22M135.584%2060.512c-4.848%2019.268-18.945%2032.09-31.488%2028.636-12.541-3.453-18.777-21.872-13.933-41.14%204.852-19.27%2018.947-32.092%2031.491-28.641%2012.541%203.451%2018.78%2021.873%2013.93%2041.145z%22/%3E%3CradialGradient%20id=%22n%22%20cx=%22112.231%22%20cy=%22209.175%22%20r=%2221.578%22%20gradientTransform=%22matrix(1.0277%20.213%20.203%20-.9792%20-86.867%20160.216)%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#020202%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#7a6f6f%22/%3E%3Cstop%20offset=%22.146%22%20stop-color=%22#726868%22/%3E%3Cstop%20offset=%22.369%22%20stop-color=%22#5d5555%22/%3E%3Cstop%20offset=%22.642%22%20stop-color=%22#3a3636%22/%3E%3Cstop%20offset=%22.896%22%20stop-color=%22#131313%22/%3E%3Cstop%20offset=%22.954%22%20stop-color=%22#161616%22/%3E%3Cstop%20offset=%22.999%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#1d1d1d%22/%3E%3C/radialGradient%3E%3Cpath%20fill=%22url(#n)%22%20d=%22M97.785-15.135C96.02-6.611%2082.566-2.189%2067.732-5.265%2052.907-8.339%2042.317-17.744%2044.084-26.269c1.767-8.528%2015.224-12.946%2030.047-9.874%2014.836%203.077%2025.426%2012.483%2023.654%2021.008z%22/%3E%3CradialGradient%20id=%22o%22%20cx=%22-268.576%22%20cy=%2251.705%22%20r=%2225.651%22%20gradientTransform=%22matrix(.8698%20-.6221%20-.6225%20-.8705%20245.284%20-128.637)%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#020202%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#7a6f6f%22/%3E%3Cstop%20offset=%22.165%22%20stop-color=%22#756b6b%22/%3E%3Cstop%20offset=%22.346%22%20stop-color=%22#685f5f%22/%3E%3Cstop%20offset=%22.535%22%20stop-color=%22#524b4b%22/%3E%3Cstop%20offset=%22.729%22%20stop-color=%22#343030%22/%3E%3Cstop%20offset=%22.896%22%20stop-color=%22#131313%22/%3E%3Cstop%20offset=%22.954%22%20stop-color=%22#161616%22/%3E%3Cstop%20offset=%22.999%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#1d1d1d%22/%3E%3C/radialGradient%3E%3Cpath%20fill=%22url(#o)%22%20d=%22M8.093-27.022c5.264%207.365-3.271%2022.492-19.071%2033.79-15.799%2011.299-32.872%2014.486-38.136%207.124-5.266-7.361%203.27-22.492%2019.07-33.787%2015.798-11.3%2032.87-14.49%2038.137-7.127z%22/%3E%3CradialGradient%20id=%22p%22%20cx=%22-69.524%22%20cy=%2225.781%22%20r=%2218.256%22%20gradientTransform=%22matrix(1.1138%200%200%20-1.1698%209.813%20116.463)%22%20gradientUnits=%22userSpaceOnUse%22%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#020202%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#242424%22/%3E%3Cstop%20offset=%220%22%20stop-color=%22#7a6f6f%22/%3E%3Cstop%20offset=%22.146%22%20stop-color=%22#726868%22/%3E%3Cstop%20offset=%22.369%22%20stop-color=%22#5d5555%22/%3E%3Cstop%20offset=%22.642%22%20stop-color=%22#3a3636%22/%3E%3Cstop%20offset=%22.896%22%20stop-color=%22#131313%22/%3E%3Cstop%20offset=%22.954%22%20stop-color=%22#161616%22/%3E%3Cstop%20offset=%22.999%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#202020%22/%3E%3Cstop%20offset=%221%22%20stop-color=%22#1d1d1d%22/%3E%3C/radialGradient%3E%3Cpath%20fill=%22url(#p)%22%20d=%22M-48.058%2086.307c0%2012.224-10.333%2022.131-23.079%2022.131-12.748%200-16.058-8.854-16.058-21.079%200-12.223%203.31-23.184%2016.058-23.184%2012.746%200%2023.079%209.907%2023.079%2022.132z%22/%3E%3C/g%3E%3Ctext%20y=%22-45.489%22%20x=%22-76.63%22%20style=%22line-height:1.25;-inkscape-font-specification:ubuntu;text-align:start%22%20font-weight=%22400%22%20font-size=%2247.05%22%20font-family=%22ubuntu%22%20letter-spacing=%220%22%20word-spacing=%220%22%20fill=%22#00f%22%3E%3Ctspan%20style=%22-inkscape-font-specification:'ubuntu%20Medium'%22%20y=%22-45.489%22%20x=%22-76.63%22%20font-weight=%22500%22%3EDebug%3C/tspan%3E%3C/text%3E%3Ctext%20style=%22line-height:1.25;-inkscape-font-specification:ubuntu;text-align:start%22%20x=%22112.763%22%20y=%22233.328%22%20font-weight=%22400%22%20font-size=%2247.05%22%20font-family=%22ubuntu%22%20letter-spacing=%220%22%20word-spacing=%220%22%20fill=%22#00f%22%3E%3Ctspan%20x=%22112.763%22%20y=%22233.328%22%20style=%22-inkscape-font-specification:'ubuntu%20Medium'%22%20font-weight=%22500%22%3EUnit%3C/tspan%3E%3C/text%3E%3Cg%20transform=%22matrix(1.60968%200%200%201.55051%20-106.88%20-211.108)%22%20stroke-width=%221.301%22%3E%3Crect%20ry=%2242.41%22%20rx=%2240.851%22%20y=%22-124%22%20x=%2248%22%20height=%22376%22%20width=%22416%22%20style=%22marker:none%22%20transform=%22matrix(.25%200%200%20.25%200%20225)%22%20fill=%22url(#q)%22/%3E%3Crect%20transform=%22matrix(.25%200%200%20.25%200%20225)%22%20style=%22marker:none%22%20width=%22416%22%20height=%22384%22%20x=%2248%22%20y=%22-164%22%20rx=%2240.851%22%20ry=%2242.41%22%20fill=%22#deddda%22/%3E%3Crect%20style=%22marker:none%22%20width=%2296%22%20height=%2288%22%20x=%2216%22%20y=%22-276%22%20rx=%225.106%22%20ry=%225.301%22%20transform=%22scale(1%20-1)%22%20fill=%22#241f31%22/%3E%3Cpath%20style=%22marker:none%22%20transform=%22scale(-1)%22%20opacity=%22.05%22%20fill=%22url(#r)%22%20d=%22M-108-272h88v78h-88z%22/%3E%3Cg%20fill=%22#fff%22%20font-weight=%22700%22%20font-family=%22Source%20Code%20Pro%22%20letter-spacing=%220%22%20word-spacing=%220%22%3E%3Cpath%20style=%22line-height:1.25;-inkscape-font-specification:'Source%20Code%20Pro,%20Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start%22%20d=%22M42.012%20208.888L28%20201.272V206l9.71%204.63v.142L28%20216v4.728l14.012-8.214zM46%20224v4h16v-4z%22/%3E%3C/g%3E%3Cpath%20style=%22marker:none%22%20d=%22M100%20244h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm84%204h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm76%204h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm84%204h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm76%204h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm84%204h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm76%204h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4zm-8%200h4v4h-4z%22%20fill=%22url(#s)%22/%3E%3C/g%3E%3C/svg%3E",
     "otid": 1593453509558
@@ -20,8 +20,8 @@
             "clock": true
           },
           "position": {
-            "x": -512,
-            "y": 304
+            "x": -528,
+            "y": 176
           }
         },
         {
@@ -40,8 +40,48 @@
             "virtual": true
           },
           "position": {
+            "x": -400,
+            "y": 176
+          }
+        },
+        {
+          "id": "de0ce225-d9d2-46e5-a257-74888ec6b3aa",
+          "type": "basic.input",
+          "data": {
+            "name": "rst",
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ],
+            "virtual": false,
+            "clock": false
+          },
+          "position": {
+            "x": -528,
+            "y": 248
+          }
+        },
+        {
+          "id": "099b59b6-f6a6-4244-85dc-6356c082a76d",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "rst",
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
             "x": -384,
-            "y": 304
+            "y": 248
           }
         },
         {
@@ -56,18 +96,6 @@
           }
         },
         {
-          "id": "30f910e5-7e7d-4fed-a0d3-d8ab8c425b63",
-          "type": "basic.outputLabel",
-          "data": {
-            "blockColor": "yellow",
-            "name": "clk"
-          },
-          "position": {
-            "x": -560,
-            "y": 464
-          }
-        },
-        {
           "id": "3e3cb41f-e5d0-4e64-b47c-249518041e87",
           "type": "basic.outputLabel",
           "data": {
@@ -77,6 +105,18 @@
           "position": {
             "x": 1592,
             "y": 472
+          }
+        },
+        {
+          "id": "30f910e5-7e7d-4fed-a0d3-d8ab8c425b63",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "yellow",
+            "name": "clk"
+          },
+          "position": {
+            "x": -536,
+            "y": 480
           }
         },
         {
@@ -244,6 +284,20 @@
           }
         },
         {
+          "id": "3ea08281-25e5-48ea-8539-71cf3cce9c62",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "rst",
+            "oldBlockColor": "fuchsia",
+            "virtual": true
+          },
+          "position": {
+            "x": -464,
+            "y": 568
+          }
+        },
+        {
           "id": "a588dbf8-158d-4f8c-b171-32ad1fbf81c5",
           "type": "basic.outputLabel",
           "data": {
@@ -252,8 +306,8 @@
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": -320,
-            "y": 592
+            "x": -256,
+            "y": 600
           }
         },
         {
@@ -265,29 +319,8 @@
             "oldBlockColor": "fuchsia"
           },
           "position": {
-            "x": -160,
-            "y": 656
-          }
-        },
-        {
-          "id": "1023fcdf-226d-4008-8b0f-e0a6689311fc",
-          "type": "basic.inputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "debug",
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ],
-            "virtual": true,
-            "oldBlockColor": "fuchsia"
-          },
-          "position": {
-            "x": -296,
-            "y": 704
+            "x": -128,
+            "y": 664
           }
         },
         {
@@ -332,6 +365,27 @@
           "position": {
             "x": 48,
             "y": 792
+          }
+        },
+        {
+          "id": "1023fcdf-226d-4008-8b0f-e0a6689311fc",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "debug",
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ],
+            "virtual": true,
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": -296,
+            "y": 824
           }
         },
         {
@@ -423,7 +477,7 @@
           },
           "position": {
             "x": -248,
-            "y": 816
+            "y": 936
           }
         },
         {
@@ -520,7 +574,7 @@
           },
           "position": {
             "x": -88,
-            "y": 872
+            "y": 992
           }
         },
         {
@@ -534,7 +588,7 @@
           },
           "position": {
             "x": -680,
-            "y": 872
+            "y": 992
           }
         },
         {
@@ -631,7 +685,7 @@
           },
           "position": {
             "x": -128,
-            "y": 960
+            "y": 1080
           }
         },
         {
@@ -652,7 +706,7 @@
           },
           "position": {
             "x": -136,
-            "y": 1064
+            "y": 1184
           }
         },
         {
@@ -785,8 +839,8 @@
           "id": "328e4478-7b0a-4a46-9c0c-2e5470047565",
           "type": "3db97e88b7f9a2a65931f3638eaa612a255dccd7",
           "position": {
-            "x": -392,
-            "y": 464
+            "x": -408,
+            "y": 480
           },
           "size": {
             "width": 96,
@@ -857,8 +911,8 @@
           "id": "a3b1d7ec-285d-462b-b152-3c93fa4dd2f5",
           "type": "81613874c6152f06c06ed7014bf4235900cfcc30",
           "position": {
-            "x": -184,
-            "y": 576
+            "x": -128,
+            "y": 584
           },
           "size": {
             "width": 96,
@@ -894,7 +948,7 @@
           "type": "8c6c8a9d87466209541c57bbaa112f3ad12c2038",
           "position": {
             "x": -488,
-            "y": 824
+            "y": 944
           },
           "size": {
             "width": 96,
@@ -906,11 +960,23 @@
           "type": "9690bd0ae8d2722170a71c4a94c996a56fc9ab73",
           "position": {
             "x": -304,
-            "y": 1016
+            "y": 1136
           },
           "size": {
             "width": 96,
             "height": 96
+          }
+        },
+        {
+          "id": "458f0e03-993c-4383-b26d-d1994954f037",
+          "type": "81613874c6152f06c06ed7014bf4235900cfcc30",
+          "position": {
+            "x": -280,
+            "y": 496
+          },
+          "size": {
+            "width": 96,
+            "height": 64
           }
         }
       ],
@@ -1171,6 +1237,26 @@
         },
         {
           "source": {
+            "block": "de0ce225-d9d2-46e5-a257-74888ec6b3aa",
+            "port": "out"
+          },
+          "target": {
+            "block": "099b59b6-f6a6-4244-85dc-6356c082a76d",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
+            "block": "3ea08281-25e5-48ea-8539-71cf3cce9c62",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "458f0e03-993c-4383-b26d-d1994954f037",
+            "port": "97b51945-d716-4b6c-9db9-970d08541249"
+          }
+        },
+        {
+          "source": {
             "block": "4df608b4-7365-4b1f-9b3d-ae316b70a78a",
             "port": "f2043f09-b391-40ea-9d1d-721438b68ef1"
           },
@@ -1375,17 +1461,6 @@
         },
         {
           "source": {
-            "block": "328e4478-7b0a-4a46-9c0c-2e5470047565",
-            "port": "dde18e55-7d08-438f-a248-5f1d0c050689"
-          },
-          "target": {
-            "block": "a3b1d7ec-285d-462b-b152-3c93fa4dd2f5",
-            "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
-          },
-          "vertices": []
-        },
-        {
-          "source": {
             "block": "bcad0350-36db-475e-800b-0917d9bdce43",
             "port": "31c5c619-664d-460a-afd2-6c3eee5b6675"
           },
@@ -1443,17 +1518,6 @@
         },
         {
           "source": {
-            "block": "a3b1d7ec-285d-462b-b152-3c93fa4dd2f5",
-            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
-          },
-          "target": {
-            "block": "92c47fea-aa2e-456f-9eed-a1704ab4e253",
-            "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
-          },
-          "vertices": []
-        },
-        {
-          "source": {
             "block": "45606b55-859a-49f0-b238-05dc2db25378",
             "port": "4b8dd4f7-2be8-4eb7-9726-0e355b0d13b1"
           },
@@ -1474,6 +1538,36 @@
             "port": "58fb3a44-dc42-49bd-a7ac-539a26ca5b29"
           },
           "size": 51
+        },
+        {
+          "source": {
+            "block": "328e4478-7b0a-4a46-9c0c-2e5470047565",
+            "port": "dde18e55-7d08-438f-a248-5f1d0c050689"
+          },
+          "target": {
+            "block": "458f0e03-993c-4383-b26d-d1994954f037",
+            "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
+          }
+        },
+        {
+          "source": {
+            "block": "458f0e03-993c-4383-b26d-d1994954f037",
+            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
+          },
+          "target": {
+            "block": "a3b1d7ec-285d-462b-b152-3c93fa4dd2f5",
+            "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
+          }
+        },
+        {
+          "source": {
+            "block": "a3b1d7ec-285d-462b-b152-3c93fa4dd2f5",
+            "port": "664caf9e-5f40-4df4-800a-b626af702e62"
+          },
+          "target": {
+            "block": "92c47fea-aa2e-456f-9eed-a1704ab4e253",
+            "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
+          }
         }
       ]
     }
