@@ -49,7 +49,7 @@
           "id": "50df7dbf-71a2-4713-89d0-ee3c3ba783bc",
           "type": "basic.info",
           "data": {
-            "info": "Tested in the Hack in the FPGA  \n\n```\nPC: 00000  A: 00000  D: 0\nPC: 00001  A: 00231  D: 0\nPC: 00002  A: 00231  D: 0\nPC: 00003  A: 00231  D: 0\nPC: 00004  A: 00231  D: 0\nPC: 00005  A: 00231  D: 0\nPC: 00006  A: 00231  D: 0\nPC: 00007  A: 00231  D: 0\nPC: 00008  A: 00231  D: 0\nPC: 00009  A: 00231  D: 0\nPC: 00010  A: 00231  D: 0\nPC: 00011  A: 00231  D: 0\nPC: 00012  A: 00231  D: 0\n...\n```",
+            "info": "Tested in the Hack in the FPGA  \n\n```\nPC: 00000  A: 00000  D: 0\nPC: 00001  A: 00231  D: 0\nPC: 00002  A: 00000  D: 0\nPC: 00003  A: 00000  D: 0\nPC: 00004  A: 00000  D: 0\n...\n```",
             "readonly": true
           },
           "position": {
@@ -59,6 +59,22 @@
           "size": {
             "width": 376,
             "height": 320
+          }
+        },
+        {
+          "id": "f99c4a7b-ced4-4512-80bf-053a1961bcb6",
+          "type": "basic.info",
+          "data": {
+            "info": "It only shows the A register with the 231 value after  \nthe execution of the instruction at 0. The next   \ninstructions read from memory are 0, that corresponde  \nto the @0 instruction (A=0)",
+            "readonly": true
+          },
+          "position": {
+            "x": 832,
+            "y": 112
+          },
+          "size": {
+            "width": 424,
+            "height": 104
           }
         }
       ],
