@@ -44,6 +44,22 @@
             "width": 600,
             "height": 528
           }
+        },
+        {
+          "id": "50df7dbf-71a2-4713-89d0-ee3c3ba783bc",
+          "type": "basic.info",
+          "data": {
+            "info": "Tested in the Hack in the FPGA  \nDo not forget to connect the  \nexternal buttons to test it  \n\nWhen the button is pressed, the  \n8 LEDs are on (simulating the   \nblack screen). When the button is  \nnot pressed, all the leds are off  \n(white screen)",
+            "readonly": true
+          },
+          "position": {
+            "x": 1096,
+            "y": -56
+          },
+          "size": {
+            "width": 256,
+            "height": 184
+          }
         }
       ],
       "wires": []
