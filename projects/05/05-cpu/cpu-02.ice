@@ -920,12 +920,12 @@
           "id": "00c1d1e6-3f20-4a74-b762-f8211ec5c504",
           "type": "basic.info",
           "data": {
-            "info": "# Example 2:  one store instruction  \n\nSame than example 1, but the result of the step by step  \nexecution is shown in the Web panel\n\nURL: xxxx",
+            "info": "# Example 2:  one store instruction  \n\nSame than example 1, but the result of the step by step  \nexecution is shown in the Web panel\n",
             "readonly": true
           },
           "position": {
-            "x": 2376,
-            "y": 296
+            "x": 2360,
+            "y": 336
           },
           "size": {
             "width": 480,
@@ -978,6 +978,86 @@
           "size": {
             "width": 96,
             "height": 96
+          }
+        },
+        {
+          "id": "55bdd7fc-eadd-4043-a3ba-86fa1d26ccdb",
+          "type": "basic.info",
+          "data": {
+            "info": "Step using a real button",
+            "readonly": true
+          },
+          "position": {
+            "x": 2568,
+            "y": 1016
+          },
+          "size": {
+            "width": 208,
+            "height": 32
+          }
+        },
+        {
+          "id": "0213053b-bca1-4061-8fd0-1887b7b60a2d",
+          "type": "basic.info",
+          "data": {
+            "info": "Step and reset using virtual buttons  \nfrom the web panel",
+            "readonly": true
+          },
+          "position": {
+            "x": 2496,
+            "y": 616
+          },
+          "size": {
+            "width": 320,
+            "height": 64
+          }
+        },
+        {
+          "id": "27adfc60-f126-4432-a7df-37eb14e7bd40",
+          "type": "basic.info",
+          "data": {
+            "info": "Instruction to \nexecute",
+            "readonly": true
+          },
+          "position": {
+            "x": 2800,
+            "y": 520
+          },
+          "size": {
+            "width": 136,
+            "height": 56
+          }
+        },
+        {
+          "id": "346aaa15-28fe-4a9a-995d-bf393bced88b",
+          "type": "basic.info",
+          "data": {
+            "info": "Debug mode: ON",
+            "readonly": true
+          },
+          "position": {
+            "x": 3136,
+            "y": 464
+          },
+          "size": {
+            "width": 136,
+            "height": 40
+          }
+        },
+        {
+          "id": "24ad946a-240e-4f5f-968f-f704d9dd3526",
+          "type": "basic.info",
+          "data": {
+            "info": "Show the current PC's 8 lower bits  \nint the LEDs",
+            "readonly": true
+          },
+          "position": {
+            "x": 3392,
+            "y": 528
+          },
+          "size": {
+            "width": 288,
+            "height": 56
           }
         }
       ],
