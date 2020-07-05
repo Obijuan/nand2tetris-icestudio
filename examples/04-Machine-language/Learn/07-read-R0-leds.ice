@@ -33,7 +33,7 @@
           "id": "316c78dc-99f2-4871-8afc-d7f4556d59c3",
           "type": "basic.info",
           "data": {
-            "info": "06-write-leds.asm\r\n\r\n```\r\n//-- Reading R0 and storing in the LEDs\r\n(LOOP)\r\n      @R0\r\n      D=M  //-- D = R0\r\n\r\n      //-- Write R0 in the LEDs\r\n      @SCREEN\r\n      M=D\r\n\r\n      //-- Repeat\r\n      @LOOP\r\n      0;JMP\r\n\r\n```\r\n",
+            "info": "07-Read-R0-leds.asm\r\n\r\n```\r\n//-- Reading R0 and storing in the LEDs\r\n(LOOP)\r\n      @R0\r\n      D=M  //-- D = R0\r\n\r\n      //-- Write R0 in the LEDs\r\n      @SCREEN\r\n      M=D\r\n\r\n      //-- Repeat\r\n      @LOOP\r\n      0;JMP\r\n\r\n```\r\n",
             "readonly": true
           },
           "position": {
