@@ -924,88 +924,6 @@
           }
         },
         {
-          "id": "4471caf9-8e4b-46d3-af5e-d6e79f945ad4",
-          "type": "basic.input",
-          "data": {
-            "name": "Button",
-            "pins": [
-              {
-                "index": "0",
-                "name": "SW1",
-                "value": "34"
-              }
-            ],
-            "virtual": false,
-            "clock": false
-          },
-          "position": {
-            "x": 2224,
-            "y": 1056
-          }
-        },
-        {
-          "id": "c563e98e-9145-4242-9e15-c18c888869fa",
-          "type": "basic.inputLabel",
-          "data": {
-            "blockColor": "fuchsia",
-            "name": "step_btn",
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ],
-            "virtual": true,
-            "oldBlockColor": "fuchsia"
-          },
-          "position": {
-            "x": 2504,
-            "y": 1056
-          }
-        },
-        {
-          "id": "364c4296-c64c-4998-b10b-318b20a3761e",
-          "type": "basic.inputLabel",
-          "data": {
-            "blockColor": "darkgreen",
-            "name": "btn",
-            "pins": [
-              {
-                "index": "0",
-                "name": "NULL",
-                "value": "NULL"
-              }
-            ],
-            "virtual": true,
-            "oldBlockColor": "fuchsia"
-          },
-          "position": {
-            "x": 2504,
-            "y": 1160
-          }
-        },
-        {
-          "id": "749b5734-fe20-40e1-ac6d-e81d2d8b0336",
-          "type": "basic.input",
-          "data": {
-            "name": "Button",
-            "pins": [
-              {
-                "index": "0",
-                "name": "SW2",
-                "value": "33"
-              }
-            ],
-            "virtual": false,
-            "clock": false
-          },
-          "position": {
-            "x": 2216,
-            "y": 1160
-          }
-        },
-        {
           "id": "7bcca21d-02b8-4727-8e49-66bf9678f73a",
           "type": "basic.outputLabel",
           "data": {
@@ -1278,8 +1196,90 @@
             "blockColor": "red"
           },
           "position": {
-            "x": 3192,
-            "y": 1168
+            "x": 3168,
+            "y": 1008
+          }
+        },
+        {
+          "id": "4471caf9-8e4b-46d3-af5e-d6e79f945ad4",
+          "type": "basic.input",
+          "data": {
+            "name": "Button",
+            "pins": [
+              {
+                "index": "0",
+                "name": "SW1",
+                "value": "34"
+              }
+            ],
+            "virtual": false,
+            "clock": false
+          },
+          "position": {
+            "x": 2224,
+            "y": 1056
+          }
+        },
+        {
+          "id": "c563e98e-9145-4242-9e15-c18c888869fa",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "fuchsia",
+            "name": "step_btn",
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ],
+            "virtual": true,
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": 2504,
+            "y": 1056
+          }
+        },
+        {
+          "id": "364c4296-c64c-4998-b10b-318b20a3761e",
+          "type": "basic.inputLabel",
+          "data": {
+            "blockColor": "darkgreen",
+            "name": "btn",
+            "pins": [
+              {
+                "index": "0",
+                "name": "NULL",
+                "value": "NULL"
+              }
+            ],
+            "virtual": true,
+            "oldBlockColor": "fuchsia"
+          },
+          "position": {
+            "x": 2504,
+            "y": 1160
+          }
+        },
+        {
+          "id": "749b5734-fe20-40e1-ac6d-e81d2d8b0336",
+          "type": "basic.input",
+          "data": {
+            "name": "Button",
+            "pins": [
+              {
+                "index": "0",
+                "name": "SW2",
+                "value": "33"
+              }
+            ],
+            "virtual": false,
+            "clock": false
+          },
+          "position": {
+            "x": 2216,
+            "y": 1160
           }
         },
         {
@@ -1312,8 +1312,8 @@
           "id": "5b462c9b-a6aa-4b5d-b153-3ba5e2cc4844",
           "type": "basic.memory",
           "data": {
-            "name": "10-add-R1-R0-leds.hack",
-            "list": "0000000000000000\n1111110000010000\n0000000000000001\n1111000010010000\n0000000000000010\n1110001100001000\n0000000000000010\n1111110000010000\n0100000000000000\n1110001100001000\n0000000000001010\n1110101010000111",
+            "name": "12-add-R0-R10-leds.hack",
+            "list": "1110101010010000\n0000000000010000\n1110001100001000\n0000000000001011\n1110001100001000\n0000000000010000\n1111110000100000\n1111110000010000\n0000000000001011\n1111000010010000\n1110001100001000\n0000000000010000\n1111110000100000\n1110110111010000\n0000000000010000\n1110001100001000\n0000000000001011\n1110010011010000\n0000000000000101\n1110001100000100\n0000000000001011\n1111110000010000\n0100000000000000\n1110001100001000\n0000000000011000\n1110101010000111",
             "local": false,
             "format": 10
           },
@@ -1323,7 +1323,7 @@
           },
           "size": {
             "width": 232,
-            "height": 216
+            "height": 208
           }
         },
         {
@@ -1344,13 +1344,31 @@
           "type": "basic.memory",
           "data": {
             "name": "RAM",
-            "list": "2\n3\n0\n100\n200\n50\n28\n47\n-1\n-50\n25634",
+            "list": "2\n3\n0\n100   // 256 \n200   // 512\n50    // 80\n28    // 40\n4a    // 74\nFFFF  //-1\nFFCE  //-50\n10BE  // 4286",
+            "local": false,
+            "format": 10
+          },
+          "position": {
+            "x": 3320,
+            "y": 312
+          },
+          "size": {
+            "width": 200,
+            "height": 208
+          }
+        },
+        {
+          "id": "35f0d6a1-3980-4c08-ad3e-372398ba4b58",
+          "type": "basic.memory",
+          "data": {
+            "name": "RAM",
+            "list": "1\n2\n3\n4\n5\n6\n7\n8\n9\na\nb\n",
             "local": false,
             "format": 10
           },
           "position": {
             "x": 3632,
-            "y": 320
+            "y": 312
           },
           "size": {
             "width": 200,
@@ -1994,16 +2012,6 @@
         },
         {
           "source": {
-            "block": "33c204b6-97ab-42d5-bf37-db5345570b24",
-            "port": "memory-out"
-          },
-          "target": {
-            "block": "761eae18-b0a3-44ba-88f8-bef07791b9d2",
-            "port": "4adbfee8-e06d-40f0-a714-d65d61f85ff7"
-          }
-        },
-        {
-          "source": {
             "block": "59b38a31-fdb0-4ec6-ba0a-074be2008f9f",
             "port": "7c565cc7-0fa0-4e6c-8425-7e8397012fff"
           },
@@ -2015,19 +2023,29 @@
         },
         {
           "source": {
+            "block": "35f0d6a1-3980-4c08-ad3e-372398ba4b58",
+            "port": "memory-out"
+          },
+          "target": {
+            "block": "761eae18-b0a3-44ba-88f8-bef07791b9d2",
+            "port": "4adbfee8-e06d-40f0-a714-d65d61f85ff7"
+          }
+        },
+        {
+          "source": {
             "block": "7bcca21d-02b8-4727-8e49-66bf9678f73a",
             "port": "outlabel"
           },
           "target": {
-            "block": "a5582eed-aa46-451d-8838-f9b0d1d7cf32",
-            "port": "2eda354d-01f8-4b59-8f76-2425a87e0ea1"
+            "block": "3b25fda3-e4e4-4ec5-b6ba-8dc87928376f",
+            "port": "f0c125be-3d80-47e7-809e-129c4cd7b79a"
           },
           "size": 52
         },
         {
           "source": {
-            "block": "a5582eed-aa46-451d-8838-f9b0d1d7cf32",
-            "port": "632897b3-208b-4245-92ba-768dfc4c7784"
+            "block": "3b25fda3-e4e4-4ec5-b6ba-8dc87928376f",
+            "port": "6a8d4c4e-e9fb-48f3-a29f-83fcd933cb99"
           },
           "target": {
             "block": "af53538a-c7a8-451f-9834-60c20c0dd025",
