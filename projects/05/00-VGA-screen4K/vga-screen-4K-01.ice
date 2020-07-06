@@ -89,7 +89,7 @@
           },
           "position": {
             "x": 1184,
-            "y": 344
+            "y": 320
           }
         },
         {
@@ -168,7 +168,7 @@
           },
           "position": {
             "x": 1184,
-            "y": 456
+            "y": 496
           }
         },
         {
@@ -542,71 +542,73 @@
             "width": 128,
             "height": 40
           }
+        },
+        {
+          "id": "dab517b4-1377-4295-9574-4a33f19d9eb0",
+          "type": "basic.info",
+          "data": {
+            "info": "**VGA signals**  \nCompatible with the AP-VGA  \non the Alhambra II",
+            "readonly": true
+          },
+          "position": {
+            "x": 1152,
+            "y": 208
+          },
+          "size": {
+            "width": 216,
+            "height": 64
+          }
+        },
+        {
+          "id": "18f7fb8c-ae13-4f07-b79d-3db2bbca90a6",
+          "type": "basic.info",
+          "data": {
+            "info": "Green",
+            "readonly": true
+          },
+          "position": {
+            "x": 1208,
+            "y": 304
+          },
+          "size": {
+            "width": 80,
+            "height": 40
+          }
+        },
+        {
+          "id": "120fdc9d-a24e-4537-8d64-fa1830492d93",
+          "type": "basic.info",
+          "data": {
+            "info": "Vertical Sync",
+            "readonly": true
+          },
+          "position": {
+            "x": 1200,
+            "y": 384
+          },
+          "size": {
+            "width": 128,
+            "height": 32
+          }
+        },
+        {
+          "id": "f5e89987-bc22-4b6a-b260-05c02b432669",
+          "type": "basic.info",
+          "data": {
+            "info": "Horizontal Sync",
+            "readonly": true
+          },
+          "position": {
+            "x": 1192,
+            "y": 480
+          },
+          "size": {
+            "width": 152,
+            "height": 40
+          }
         }
       ],
       "wires": [
-        {
-          "source": {
-            "block": "85d6250c-5b7b-4f39-9d82-5429e695ebc3",
-            "port": "51e12579-e55f-42c9-8934-1fe7c87c057d",
-            "size": 16
-          },
-          "target": {
-            "block": "080ffd25-0172-4fc5-9aae-6a5d3b66a444",
-            "port": "inlabel"
-          },
-          "size": 16
-        },
-        {
-          "source": {
-            "block": "a71acff7-4a7d-44c7-a13a-320da3a16f0f",
-            "port": "997db8c4-b772-49d8-83e7-4427aff720e6"
-          },
-          "target": {
-            "block": "acd73043-eecd-4c3f-a383-c7597b9e44f7",
-            "port": "inlabel"
-          }
-        },
-        {
-          "source": {
-            "block": "119b6de2-7048-4f7d-885d-0b17db2c6bd5",
-            "port": "997db8c4-b772-49d8-83e7-4427aff720e6"
-          },
-          "target": {
-            "block": "3a5d7d18-5f32-43d6-a899-63069ee26784",
-            "port": "inlabel"
-          }
-        },
-        {
-          "source": {
-            "block": "d071e7c8-d6da-4737-88b6-08e0bbcd8e20",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "8001bbe0-0a6d-4f2e-a22a-9068a3e9e574",
-            "port": "1e637a79-4a6d-495c-bcac-9664bdbe4b94"
-          }
-        },
-        {
-          "source": {
-            "block": "1db92ed0-0e55-4f92-9ee2-7ae423c42639",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "4f561f4d-4b14-4bf4-90c3-8a5704058410",
-            "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
-          }
-        },
-        {
-          "source": {
-            "block": "e9cba572-ec1d-42b8-ae33-b3de0688dc8d",
-            "port": "outlabel"
-          },
-          "target": {
-            "block": "4f561f4d-4b14-4bf4-90c3-8a5704058410",
-            "port": "97b51945-d716-4b6c-9db9-970d08541249"
-          }
-        },
         {
           "source": {
             "block": "85d6250c-5b7b-4f39-9d82-5429e695ebc3",
@@ -639,6 +641,17 @@
         },
         {
           "source": {
+            "block": "85d6250c-5b7b-4f39-9d82-5429e695ebc3",
+            "port": "51e12579-e55f-42c9-8934-1fe7c87c057d"
+          },
+          "target": {
+            "block": "080ffd25-0172-4fc5-9aae-6a5d3b66a444",
+            "port": "inlabel"
+          },
+          "size": 16
+        },
+        {
+          "source": {
             "block": "ba9d46c0-3ebd-4d68-a847-fb76b364137d",
             "port": "out"
           },
@@ -667,6 +680,16 @@
             "port": "c3373f7a-7326-4805-ab78-ccde21dc1811"
           },
           "size": 12
+        },
+        {
+          "source": {
+            "block": "a71acff7-4a7d-44c7-a13a-320da3a16f0f",
+            "port": "997db8c4-b772-49d8-83e7-4427aff720e6"
+          },
+          "target": {
+            "block": "acd73043-eecd-4c3f-a383-c7597b9e44f7",
+            "port": "inlabel"
+          }
         },
         {
           "source": {
@@ -720,6 +743,46 @@
             "port": "ca222687-2581-4eb5-b4a3-ef2d8d5b3c3f"
           },
           "size": 16
+        },
+        {
+          "source": {
+            "block": "119b6de2-7048-4f7d-885d-0b17db2c6bd5",
+            "port": "997db8c4-b772-49d8-83e7-4427aff720e6"
+          },
+          "target": {
+            "block": "3a5d7d18-5f32-43d6-a899-63069ee26784",
+            "port": "inlabel"
+          }
+        },
+        {
+          "source": {
+            "block": "d071e7c8-d6da-4737-88b6-08e0bbcd8e20",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "8001bbe0-0a6d-4f2e-a22a-9068a3e9e574",
+            "port": "1e637a79-4a6d-495c-bcac-9664bdbe4b94"
+          }
+        },
+        {
+          "source": {
+            "block": "1db92ed0-0e55-4f92-9ee2-7ae423c42639",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "4f561f4d-4b14-4bf4-90c3-8a5704058410",
+            "port": "18c2ebc7-5152-439c-9b3f-851c59bac834"
+          }
+        },
+        {
+          "source": {
+            "block": "e9cba572-ec1d-42b8-ae33-b3de0688dc8d",
+            "port": "outlabel"
+          },
+          "target": {
+            "block": "4f561f4d-4b14-4bf4-90c3-8a5704058410",
+            "port": "97b51945-d716-4b6c-9db9-970d08541249"
+          }
         },
         {
           "source": {
