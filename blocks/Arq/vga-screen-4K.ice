@@ -289,35 +289,6 @@
           }
         },
         {
-          "id": "62b117e0-9afc-4753-bb74-ab52ce63e355",
-          "type": "basic.outputLabel",
-          "data": {
-            "name": "data_in",
-            "range": "[15:0]",
-            "blockColor": "red",
-            "size": 16
-          },
-          "position": {
-            "x": 3328,
-            "y": 1552
-          }
-        },
-        {
-          "id": "f1d186c8-1c89-499f-bb62-475bba51059e",
-          "type": "basic.outputLabel",
-          "data": {
-            "blockColor": "coral",
-            "name": "add_w",
-            "range": "[11:0]",
-            "oldBlockColor": "mediumvioletred",
-            "size": 12
-          },
-          "position": {
-            "x": 3328,
-            "y": 1616
-          }
-        },
-        {
           "id": "8fe99fb0-6f2c-4e92-90be-a8a2115505de",
           "type": "basic.inputLabel",
           "data": {
@@ -409,7 +380,36 @@
             "virtual": true
           },
           "position": {
-            "x": 4296,
+            "x": 4216,
+            "y": 1536
+          }
+        },
+        {
+          "id": "62b117e0-9afc-4753-bb74-ab52ce63e355",
+          "type": "basic.outputLabel",
+          "data": {
+            "name": "data_in",
+            "range": "[15:0]",
+            "blockColor": "red",
+            "size": 16
+          },
+          "position": {
+            "x": 3328,
+            "y": 1552
+          }
+        },
+        {
+          "id": "f1d186c8-1c89-499f-bb62-475bba51059e",
+          "type": "basic.outputLabel",
+          "data": {
+            "blockColor": "coral",
+            "name": "add_w",
+            "range": "[11:0]",
+            "oldBlockColor": "mediumvioletred",
+            "size": 12
+          },
+          "position": {
+            "x": 3328,
             "y": 1616
           }
         },
@@ -1030,58 +1030,6 @@
           }
         },
         {
-          "id": "ba8c12b1-f855-4d5a-a3a9-b99db67cb2ab",
-          "type": "basic.code",
-          "data": {
-            "code": "reg [15:0] mem[3840:0];\nreg [15:0] char;\n\ninitial\n    begin\n       if (display) $readmemh(display, mem);\n    end\n\nalways @(posedge clk) // Write memory.\n    begin\n\t    if (write_ena)\n\t    \tmem[add_w] <= data_in; // Using write address bus.\n\tend\n\t\nalways @(posedge clk) // Read memory.\n\tbegin\n\t\tchar <= mem[add_r]; // Using read address bus.\n\tend",
-            "params": [
-              {
-                "name": "display"
-              }
-            ],
-            "ports": {
-              "in": [
-                {
-                  "name": "clk"
-                },
-                {
-                  "name": "data_in",
-                  "range": "[15:0]",
-                  "size": 16
-                },
-                {
-                  "name": "add_w",
-                  "range": "[11:0]",
-                  "size": 12
-                },
-                {
-                  "name": "write_ena"
-                },
-                {
-                  "name": "add_r",
-                  "range": "[11:0]",
-                  "size": 12
-                }
-              ],
-              "out": [
-                {
-                  "name": "char",
-                  "range": "[15:0]",
-                  "size": 16
-                }
-              ]
-            }
-          },
-          "position": {
-            "x": 3544,
-            "y": 1496
-          },
-          "size": {
-            "width": 568,
-            "height": 296
-          }
-        },
-        {
           "id": "3c96bab0-c131-410b-a862-b554ec99718c",
           "type": "basic.code",
           "data": {
@@ -1188,6 +1136,63 @@
           "size": {
             "width": 96,
             "height": 64
+          }
+        },
+        {
+          "id": "ba8c12b1-f855-4d5a-a3a9-b99db67cb2ab",
+          "type": "basic.code",
+          "data": {
+            "code": "reg [15:0] mem[3840:0];\nreg [15:0] char;\nreg [15:0] data;\n\ninitial\n    begin\n       if (display) $readmemh(display, mem);\n    end\n\n//-- Port 1: Read and write\nalways @(posedge clk) // Write memory.\n    begin\n\t    if (write_ena)\n\t    \tmem[add_w] <= data_in; // Using write address bus.\n\t    else\n\t       data <= mem[add_w];\n\tend\n\n//--Port 2: Read: Sent to the VGA\t\nalways @(posedge clk) // Read memory.\n\tbegin\n\t\tchar <= mem[add_r]; // Using read address bus.\n\tend",
+            "params": [
+              {
+                "name": "display"
+              }
+            ],
+            "ports": {
+              "in": [
+                {
+                  "name": "clk"
+                },
+                {
+                  "name": "data_in",
+                  "range": "[15:0]",
+                  "size": 16
+                },
+                {
+                  "name": "add_w",
+                  "range": "[11:0]",
+                  "size": 12
+                },
+                {
+                  "name": "write_ena"
+                },
+                {
+                  "name": "add_r",
+                  "range": "[11:0]",
+                  "size": 12
+                }
+              ],
+              "out": [
+                {
+                  "name": "data",
+                  "range": "[15:0]",
+                  "size": 16
+                },
+                {
+                  "name": "char",
+                  "range": "[15:0]",
+                  "size": 16
+                }
+              ]
+            }
+          },
+          "position": {
+            "x": 3544,
+            "y": 1496
+          },
+          "size": {
+            "width": 568,
+            "height": 296
           }
         }
       ],
@@ -1453,18 +1458,6 @@
         },
         {
           "source": {
-            "block": "ba8c12b1-f855-4d5a-a3a9-b99db67cb2ab",
-            "port": "char",
-            "size": 16
-          },
-          "target": {
-            "block": "8fe99fb0-6f2c-4e92-90be-a8a2115505de",
-            "port": "inlabel"
-          },
-          "size": 16
-        },
-        {
-          "source": {
             "block": "83b33b2a-846e-468c-afee-c0e23210404b",
             "port": "outlabel"
           },
@@ -1472,6 +1465,18 @@
             "block": "51e12579-e55f-42c9-8934-1fe7c87c057d",
             "port": "in",
             "size": 16
+          },
+          "size": 16
+        },
+        {
+          "source": {
+            "block": "ba8c12b1-f855-4d5a-a3a9-b99db67cb2ab",
+            "port": "data",
+            "size": 16
+          },
+          "target": {
+            "block": "8fe99fb0-6f2c-4e92-90be-a8a2115505de",
+            "port": "inlabel"
           },
           "size": 16
         },
