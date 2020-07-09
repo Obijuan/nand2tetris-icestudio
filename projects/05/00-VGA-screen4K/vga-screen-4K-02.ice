@@ -467,18 +467,6 @@
           }
         },
         {
-          "id": "85d6250c-5b7b-4f39-9d82-5429e695ebc3",
-          "type": "6d3a9889ce9aa94b2c7a49dc0e9cb8d50943c219",
-          "position": {
-            "x": 944,
-            "y": 384
-          },
-          "size": {
-            "width": 96,
-            "height": 128
-          }
-        },
-        {
           "id": "f387b571-cbb0-48c9-aa9e-1063d2fd6bc1",
           "type": "basic.info",
           "data": {
@@ -681,6 +669,18 @@
             "width": 200,
             "height": 72
           }
+        },
+        {
+          "id": "856f9caa-a43e-470c-84b1-c99a57925516",
+          "type": "7b2c50c6e05355ff14ec778351e7ffd6d39d286b",
+          "position": {
+            "x": 944,
+            "y": 384
+          },
+          "size": {
+            "width": 96,
+            "height": 128
+          }
         }
       ],
       "wires": [
@@ -700,7 +700,7 @@
             "port": "f9c58d8f-75fc-4483-b0d2-d584a555b1c5"
           },
           "target": {
-            "block": "85d6250c-5b7b-4f39-9d82-5429e695ebc3",
+            "block": "856f9caa-a43e-470c-84b1-c99a57925516",
             "port": "d0db24bf-006d-41ca-ae98-87cef9ba769f"
           },
           "size": 16
@@ -711,7 +711,7 @@
             "port": "01aaff81-deba-4de7-b612-2fd07d6ba191"
           },
           "target": {
-            "block": "85d6250c-5b7b-4f39-9d82-5429e695ebc3",
+            "block": "856f9caa-a43e-470c-84b1-c99a57925516",
             "port": "c3373f7a-7326-4805-ab78-ccde21dc1811"
           },
           "size": 12
@@ -732,7 +732,7 @@
             "port": "outlabel"
           },
           "target": {
-            "block": "85d6250c-5b7b-4f39-9d82-5429e695ebc3",
+            "block": "856f9caa-a43e-470c-84b1-c99a57925516",
             "port": "fbab8124-1e62-47cc-aa16-79f73ba7d459"
           }
         },
@@ -857,7 +857,7 @@
         },
         {
           "source": {
-            "block": "85d6250c-5b7b-4f39-9d82-5429e695ebc3",
+            "block": "856f9caa-a43e-470c-84b1-c99a57925516",
             "port": "3d542269-4a30-4ab8-ae6a-ea9798a591f8"
           },
           "target": {
@@ -867,7 +867,7 @@
         },
         {
           "source": {
-            "block": "85d6250c-5b7b-4f39-9d82-5429e695ebc3",
+            "block": "856f9caa-a43e-470c-84b1-c99a57925516",
             "port": "932143ac-1fc9-433f-8472-7075dcee5285"
           },
           "target": {
@@ -877,7 +877,7 @@
         },
         {
           "source": {
-            "block": "85d6250c-5b7b-4f39-9d82-5429e695ebc3",
+            "block": "856f9caa-a43e-470c-84b1-c99a57925516",
             "port": "f8aafd5a-7c70-4706-8b8b-77fbfd93cc83"
           },
           "target": {
@@ -4923,7 +4923,7 @@
         }
       }
     },
-    "6d3a9889ce9aa94b2c7a49dc0e9cb8d50943c219": {
+    "7b2c50c6e05355ff14ec778351e7ffd6d39d286b": {
       "package": {
         "name": "VGA-Screen-HACK",
         "version": "0.1",
@@ -5212,35 +5212,6 @@
               }
             },
             {
-              "id": "62b117e0-9afc-4753-bb74-ab52ce63e355",
-              "type": "basic.outputLabel",
-              "data": {
-                "name": "data_in",
-                "range": "[15:0]",
-                "blockColor": "red",
-                "size": 16
-              },
-              "position": {
-                "x": 3328,
-                "y": 1552
-              }
-            },
-            {
-              "id": "f1d186c8-1c89-499f-bb62-475bba51059e",
-              "type": "basic.outputLabel",
-              "data": {
-                "blockColor": "coral",
-                "name": "add_w",
-                "range": "[11:0]",
-                "oldBlockColor": "mediumvioletred",
-                "size": 12
-              },
-              "position": {
-                "x": 3328,
-                "y": 1616
-              }
-            },
-            {
               "id": "8fe99fb0-6f2c-4e92-90be-a8a2115505de",
               "type": "basic.inputLabel",
               "data": {
@@ -5332,7 +5303,36 @@
                 "virtual": true
               },
               "position": {
-                "x": 4296,
+                "x": 4216,
+                "y": 1536
+              }
+            },
+            {
+              "id": "62b117e0-9afc-4753-bb74-ab52ce63e355",
+              "type": "basic.outputLabel",
+              "data": {
+                "name": "data_in",
+                "range": "[15:0]",
+                "blockColor": "red",
+                "size": 16
+              },
+              "position": {
+                "x": 3328,
+                "y": 1552
+              }
+            },
+            {
+              "id": "f1d186c8-1c89-499f-bb62-475bba51059e",
+              "type": "basic.outputLabel",
+              "data": {
+                "blockColor": "coral",
+                "name": "add_w",
+                "range": "[11:0]",
+                "oldBlockColor": "mediumvioletred",
+                "size": 12
+              },
+              "position": {
+                "x": 3328,
                 "y": 1616
               }
             },
@@ -5789,58 +5789,6 @@
               }
             },
             {
-              "id": "ba8c12b1-f855-4d5a-a3a9-b99db67cb2ab",
-              "type": "basic.code",
-              "data": {
-                "code": "reg [15:0] mem[3840:0];\nreg [15:0] char;\n\ninitial\n    begin\n       if (display) $readmemh(display, mem);\n    end\n\nalways @(posedge clk) // Write memory.\n    begin\n\t    if (write_ena)\n\t    \tmem[add_w] <= data_in; // Using write address bus.\n\tend\n\t\nalways @(posedge clk) // Read memory.\n\tbegin\n\t\tchar <= mem[add_r]; // Using read address bus.\n\tend",
-                "params": [
-                  {
-                    "name": "display"
-                  }
-                ],
-                "ports": {
-                  "in": [
-                    {
-                      "name": "clk"
-                    },
-                    {
-                      "name": "data_in",
-                      "range": "[15:0]",
-                      "size": 16
-                    },
-                    {
-                      "name": "add_w",
-                      "range": "[11:0]",
-                      "size": 12
-                    },
-                    {
-                      "name": "write_ena"
-                    },
-                    {
-                      "name": "add_r",
-                      "range": "[11:0]",
-                      "size": 12
-                    }
-                  ],
-                  "out": [
-                    {
-                      "name": "char",
-                      "range": "[15:0]",
-                      "size": 16
-                    }
-                  ]
-                }
-              },
-              "position": {
-                "x": 3544,
-                "y": 1496
-              },
-              "size": {
-                "width": 568,
-                "height": 296
-              }
-            },
-            {
               "id": "3c96bab0-c131-410b-a862-b554ec99718c",
               "type": "basic.code",
               "data": {
@@ -5947,6 +5895,63 @@
               "size": {
                 "width": 96,
                 "height": 64
+              }
+            },
+            {
+              "id": "ba8c12b1-f855-4d5a-a3a9-b99db67cb2ab",
+              "type": "basic.code",
+              "data": {
+                "code": "reg [15:0] mem[3840:0];\nreg [15:0] char;\nreg [15:0] data;\n\ninitial\n    begin\n       if (display) $readmemh(display, mem);\n    end\n\n//-- Port 1: Read and write\nalways @(posedge clk) // Write memory.\n    begin\n\t    if (write_ena)\n\t    \tmem[add_w] <= data_in; // Using write address bus.\n\t    else\n\t       data <= mem[add_w];\n\tend\n\n//--Port 2: Read: Sent to the VGA\t\nalways @(posedge clk) // Read memory.\n\tbegin\n\t\tchar <= mem[add_r]; // Using read address bus.\n\tend",
+                "params": [
+                  {
+                    "name": "display"
+                  }
+                ],
+                "ports": {
+                  "in": [
+                    {
+                      "name": "clk"
+                    },
+                    {
+                      "name": "data_in",
+                      "range": "[15:0]",
+                      "size": 16
+                    },
+                    {
+                      "name": "add_w",
+                      "range": "[11:0]",
+                      "size": 12
+                    },
+                    {
+                      "name": "write_ena"
+                    },
+                    {
+                      "name": "add_r",
+                      "range": "[11:0]",
+                      "size": 12
+                    }
+                  ],
+                  "out": [
+                    {
+                      "name": "data",
+                      "range": "[15:0]",
+                      "size": 16
+                    },
+                    {
+                      "name": "char",
+                      "range": "[15:0]",
+                      "size": 16
+                    }
+                  ]
+                }
+              },
+              "position": {
+                "x": 3544,
+                "y": 1496
+              },
+              "size": {
+                "width": 568,
+                "height": 296
               }
             }
           ],
@@ -6212,18 +6217,6 @@
             },
             {
               "source": {
-                "block": "ba8c12b1-f855-4d5a-a3a9-b99db67cb2ab",
-                "port": "char",
-                "size": 16
-              },
-              "target": {
-                "block": "8fe99fb0-6f2c-4e92-90be-a8a2115505de",
-                "port": "inlabel"
-              },
-              "size": 16
-            },
-            {
-              "source": {
                 "block": "83b33b2a-846e-468c-afee-c0e23210404b",
                 "port": "outlabel"
               },
@@ -6231,6 +6224,18 @@
                 "block": "51e12579-e55f-42c9-8934-1fe7c87c057d",
                 "port": "in",
                 "size": 16
+              },
+              "size": 16
+            },
+            {
+              "source": {
+                "block": "ba8c12b1-f855-4d5a-a3a9-b99db67cb2ab",
+                "port": "data",
+                "size": 16
+              },
+              "target": {
+                "block": "8fe99fb0-6f2c-4e92-90be-a8a2115505de",
+                "port": "inlabel"
               },
               "size": 16
             },
