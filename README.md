@@ -1,6 +1,14 @@
 # nand2tetris-icestudio
 The Nand2tetris course, using icestudio for building hardware on Opensource FPGAs from the begining
 
+![](wiki/img/Nand2tetris-06-alhambra-video.jpg)
+
+## Board used for the examples
+
+Alhambra-II FPGA board with the AP-VGA shield
+
+![](wiki/img/Nand2tetris-07-alhambra-vga.jpg)
+
 ## Project 01: Boolean Logic
 
 ![](wiki/img/Nand2tetris-01-index.png)
@@ -24,3 +32,4 @@ The Nand2tetris course, using icestudio for building hardware on Opensource FPGA
 ## Project 05: Computer Architecture
 
 ![](wiki/img/Nand2tetris-05-index-1.png)
+![](wiki/img/Nand2tetris-05.gif)
