@@ -1306,7 +1306,7 @@
           "id": "8323fd04-6d09-415f-85a1-fbb7f7f58e41",
           "type": "basic.constant",
           "data": {
-            "name": "Reset",
+            "name": "Write+",
             "value": "\"S\"",
             "local": false
           },
@@ -1698,6 +1698,22 @@
           "size": {
             "width": 96,
             "height": 192
+          }
+        },
+        {
+          "id": "aec7106d-f938-47d0-aca6-5239da27b44d",
+          "type": "basic.info",
+          "data": {
+            "info": "# Example 4: VGA read/write from a web panel\n\nWith the switches, the current address and data are set. When the  \n\"Q\" button is pressed, the data is written in the current address  \nIf the \"S\" button is pressed, the current address is increased  \nand the data is written in the new location",
+            "readonly": true
+          },
+          "position": {
+            "x": -184,
+            "y": -200
+          },
+          "size": {
+            "width": 496,
+            "height": 120
           }
         }
       ],

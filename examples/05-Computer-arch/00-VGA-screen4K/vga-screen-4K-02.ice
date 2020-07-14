@@ -681,6 +681,22 @@
             "width": 96,
             "height": 128
           }
+        },
+        {
+          "id": "356d0179-aa00-4d9b-a4bb-5fb8e93c4e2c",
+          "type": "basic.info",
+          "data": {
+            "info": "# Example 2: VGA writing example\n\nDrawing an alien (from space-invaders) in the current position  \nwhen the button sw2 is pressed  \nThis position is automatically incremented",
+            "readonly": true
+          },
+          "position": {
+            "x": -272,
+            "y": 104
+          },
+          "size": {
+            "width": 496,
+            "height": 120
+          }
         }
       ],
       "wires": [

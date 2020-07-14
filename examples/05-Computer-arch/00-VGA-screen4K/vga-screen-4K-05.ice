@@ -1288,6 +1288,22 @@
             "width": 96,
             "height": 64
           }
+        },
+        {
+          "id": "064a1258-cdeb-4fda-93ae-1283cfd9d68c",
+          "type": "basic.info",
+          "data": {
+            "info": "# Example 5: Loading data in the memory from the PC\n\nWhen the RTS is released, the address register is initialized to 0  \nAll the data comming from the serial port is stored in the VIDEO  \nmemory and shown in the VGA  \nYou can use the vga-upload.py python program",
+            "readonly": true
+          },
+          "position": {
+            "x": 448,
+            "y": -456
+          },
+          "size": {
+            "width": 704,
+            "height": 176
+          }
         }
       ],
       "wires": [
@@ -1298,16 +1314,14 @@
           },
           "target": {
             "block": "fb2795de-b1c2-4731-a42e-c03f8786f26a",
-            "port": "d0db24bf-006d-41ca-ae98-87cef9ba769f",
-            "size": 16
+            "port": "d0db24bf-006d-41ca-ae98-87cef9ba769f"
           },
           "size": 16
         },
         {
           "source": {
             "block": "9ee81c66-0c35-44a2-bc7e-93ad8f03e5fa",
-            "port": "a225cbb1-1735-4c72-ada2-bd1772d0f7c2",
-            "size": 12
+            "port": "a225cbb1-1735-4c72-ada2-bd1772d0f7c2"
           },
           "target": {
             "block": "67398a7e-9d7c-4b31-abd7-bc65113e78c2",
@@ -1318,8 +1332,7 @@
         {
           "source": {
             "block": "18039dec-92db-42de-8823-b96a5e50441e",
-            "port": "b84982aa-d649-4e89-9c0b-d27421870781",
-            "size": 12
+            "port": "b84982aa-d649-4e89-9c0b-d27421870781"
           },
           "target": {
             "block": "938f6d03-9ff5-43c9-ba41-9827c15c1af2",
@@ -1334,8 +1347,7 @@
           },
           "target": {
             "block": "9ee81c66-0c35-44a2-bc7e-93ad8f03e5fa",
-            "port": "72dd5873-fe3f-4d8d-b4bd-e078bd20cc06",
-            "size": 12
+            "port": "72dd5873-fe3f-4d8d-b4bd-e078bd20cc06"
           },
           "size": 12
         },
@@ -1346,8 +1358,7 @@
           },
           "target": {
             "block": "fb2795de-b1c2-4731-a42e-c03f8786f26a",
-            "port": "c3373f7a-7326-4805-ab78-ccde21dc1811",
-            "size": 12
+            "port": "c3373f7a-7326-4805-ab78-ccde21dc1811"
           },
           "size": 12
         },
@@ -1384,8 +1395,7 @@
         {
           "source": {
             "block": "d773b27f-8e34-4dea-8d47-2e7dd315d1f3",
-            "port": "b82422cd-6ac3-4b32-a8b8-3aff2a066775",
-            "size": 8
+            "port": "b82422cd-6ac3-4b32-a8b8-3aff2a066775"
           },
           "target": {
             "block": "827f29f1-d524-4c83-a637-c6521624b5d1",
@@ -1400,8 +1410,7 @@
           },
           "target": {
             "block": "90177331-36a6-4e2b-a655-68e421996adb",
-            "port": "42b35cc2-aa64-4e66-be42-169958246799",
-            "size": 8
+            "port": "42b35cc2-aa64-4e66-be42-169958246799"
           },
           "size": 8
         },
@@ -1423,8 +1432,7 @@
           },
           "target": {
             "block": "62a4c928-62d5-4728-9d00-0514303eb096",
-            "port": "42b35cc2-aa64-4e66-be42-169958246799",
-            "size": 8
+            "port": "42b35cc2-aa64-4e66-be42-169958246799"
           },
           "vertices": [],
           "size": 8
@@ -1452,8 +1460,7 @@
         {
           "source": {
             "block": "d062b4f3-5341-4905-9190-5b7a74959e9b",
-            "port": "84292ebb-60eb-48e2-bdac-43cdd0d604af",
-            "size": 16
+            "port": "84292ebb-60eb-48e2-bdac-43cdd0d604af"
           },
           "target": {
             "block": "93c77842-ddaf-4d43-8acf-7d3a2ada582f",

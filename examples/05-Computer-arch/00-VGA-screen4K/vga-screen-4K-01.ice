@@ -596,7 +596,23 @@
           }
         },
         {
-          "id": "fbb43133-71db-46dc-b3f1-383e1b84af45",
+          "id": "533eb6d7-3f2e-4fdf-b605-07b02062cd3a",
+          "type": "basic.info",
+          "data": {
+            "info": "# Example 1: VGA writing example\n\nUsing the buttons SW1 and SW2 we can write the values 0 and -1  \nin the current memory location. This position is automatically  \nincremented after pressing any button ",
+            "readonly": true
+          },
+          "position": {
+            "x": -208,
+            "y": -88
+          },
+          "size": {
+            "width": 496,
+            "height": 120
+          }
+        },
+        {
+          "id": "acb2276f-75b2-4502-9f1e-6f35994154e0",
           "type": "7b2c50c6e05355ff14ec778351e7ffd6d39d286b",
           "position": {
             "x": 944,
@@ -611,7 +627,7 @@
       "wires": [
         {
           "source": {
-            "block": "fbb43133-71db-46dc-b3f1-383e1b84af45",
+            "block": "acb2276f-75b2-4502-9f1e-6f35994154e0",
             "port": "f8aafd5a-7c70-4706-8b8b-77fbfd93cc83"
           },
           "target": {
@@ -621,7 +637,7 @@
         },
         {
           "source": {
-            "block": "fbb43133-71db-46dc-b3f1-383e1b84af45",
+            "block": "acb2276f-75b2-4502-9f1e-6f35994154e0",
             "port": "3d542269-4a30-4ab8-ae6a-ea9798a591f8"
           },
           "target": {
@@ -631,7 +647,7 @@
         },
         {
           "source": {
-            "block": "fbb43133-71db-46dc-b3f1-383e1b84af45",
+            "block": "acb2276f-75b2-4502-9f1e-6f35994154e0",
             "port": "932143ac-1fc9-433f-8472-7075dcee5285"
           },
           "target": {
@@ -641,7 +657,7 @@
         },
         {
           "source": {
-            "block": "fbb43133-71db-46dc-b3f1-383e1b84af45",
+            "block": "acb2276f-75b2-4502-9f1e-6f35994154e0",
             "port": "51e12579-e55f-42c9-8934-1fe7c87c057d"
           },
           "target": {
@@ -676,7 +692,7 @@
             "port": "8412617d-f0f7-4bc1-aa99-41b0831a1bc0"
           },
           "target": {
-            "block": "fbb43133-71db-46dc-b3f1-383e1b84af45",
+            "block": "acb2276f-75b2-4502-9f1e-6f35994154e0",
             "port": "c3373f7a-7326-4805-ab78-ccde21dc1811"
           },
           "size": 12
@@ -707,7 +723,7 @@
             "port": "457ef919-6d9d-4283-acce-342e46d864a2"
           },
           "target": {
-            "block": "fbb43133-71db-46dc-b3f1-383e1b84af45",
+            "block": "acb2276f-75b2-4502-9f1e-6f35994154e0",
             "port": "d0db24bf-006d-41ca-ae98-87cef9ba769f"
           },
           "size": 16
@@ -790,7 +806,7 @@
             "port": "664caf9e-5f40-4df4-800a-b626af702e62"
           },
           "target": {
-            "block": "fbb43133-71db-46dc-b3f1-383e1b84af45",
+            "block": "acb2276f-75b2-4502-9f1e-6f35994154e0",
             "port": "fbab8124-1e62-47cc-aa16-79f73ba7d459"
           }
         },

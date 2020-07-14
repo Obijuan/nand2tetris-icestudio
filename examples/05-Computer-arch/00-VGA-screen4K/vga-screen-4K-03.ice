@@ -524,6 +524,22 @@
             "width": 96,
             "height": 128
           }
+        },
+        {
+          "id": "eb12f2e7-b0e9-4cd4-8439-0f69f0aacd98",
+          "type": "basic.info",
+          "data": {
+            "info": "# Example 3: VGA read/write from a web panel\n\nBoth the address and the data are set by means of the  \nswitches from the web panel. When the button \"Q\" is pressed  \nthe data is written in the current address, or read otherwiswe",
+            "readonly": true
+          },
+          "position": {
+            "x": 216,
+            "y": 24
+          },
+          "size": {
+            "width": 496,
+            "height": 120
+          }
         }
       ],
       "wires": [
@@ -7743,14 +7759,16 @@
               },
               "target": {
                 "block": "a41a3352-dce6-4edc-a282-f2759c8f63a4",
-                "port": "in"
+                "port": "in",
+                "size": 16
               },
               "size": 16
             },
             {
               "source": {
                 "block": "cedc2041-8464-46ba-94ba-0688a1314327",
-                "port": "out"
+                "port": "out",
+                "size": 16
               },
               "target": {
                 "block": "9fc36e4d-7634-496b-bacc-15064c673058",
@@ -7765,7 +7783,8 @@
               },
               "target": {
                 "block": "983304b4-14e5-4679-b174-df2565199958",
-                "port": "7082e94b-bc76-487f-bb77-1655d175c2e5"
+                "port": "7082e94b-bc76-487f-bb77-1655d175c2e5",
+                "size": 16
               },
               "size": 16
             },
@@ -7792,7 +7811,8 @@
             {
               "source": {
                 "block": "cb6100ab-5002-414e-a5ab-69077de7d1d2",
-                "port": "49ac5583-9721-4ce1-a050-f97e9d28fe2e"
+                "port": "49ac5583-9721-4ce1-a050-f97e9d28fe2e",
+                "size": 16
               },
               "target": {
                 "block": "c9ebdfb6-97d9-459e-a82d-b452ca4af900",
@@ -7823,7 +7843,8 @@
             {
               "source": {
                 "block": "cb6100ab-5002-414e-a5ab-69077de7d1d2",
-                "port": "f04699e5-7eb0-42a6-8e55-064aa2ba36f5"
+                "port": "f04699e5-7eb0-42a6-8e55-064aa2ba36f5",
+                "size": 11
               },
               "target": {
                 "block": "b32f10de-7ff5-464e-8ac0-c6573264a8b0",
@@ -7838,7 +7859,8 @@
               },
               "target": {
                 "block": "22d0cade-659d-44e7-9119-0b8e589070f3",
-                "port": "0df7521b-f2e6-4ebd-93b5-45ee2bf7e73f"
+                "port": "0df7521b-f2e6-4ebd-93b5-45ee2bf7e73f",
+                "size": 11
               },
               "size": 11
             },
@@ -7855,7 +7877,8 @@
             {
               "source": {
                 "block": "7b2b049e-4f7e-4c90-85b6-03e39ebe668c",
-                "port": "d31ea3aa-d267-4254-830d-e9b24861dec4"
+                "port": "d31ea3aa-d267-4254-830d-e9b24861dec4",
+                "size": 12
               },
               "target": {
                 "block": "ab6c5687-5d73-4f38-b9f6-485ee115791f",
@@ -7870,7 +7893,8 @@
               },
               "target": {
                 "block": "871d3ea0-7750-4f76-9f81-c9eba0994ee0",
-                "port": "in"
+                "port": "in",
+                "size": 12
               },
               "size": 12
             },
