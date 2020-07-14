@@ -22,3 +22,5 @@ The Nand2tetris course, using icestudio for building hardware on Opensource FPGA
 ![](wiki/img/Nand2tetris-04-index-2.png)
 
 ## Project 05: Computer Architecture
+
+![](wiki/img/Nand2tetris-05-index-1.png)
