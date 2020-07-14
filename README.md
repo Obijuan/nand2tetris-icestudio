@@ -15,3 +15,8 @@ The Nand2tetris course, using icestudio for building hardware on Opensource FPGA
 
 ![](wiki/img/Nand2tetris-03-index.png)
 ![](wiki/img/Nand2tetris-03.gif)
+
+## Project 04: Machine Languaje
+
+![](wiki/img/Nand2tetris-04-index.png)
+![](wiki/img/Nand2tetris-04-index-2.png)
